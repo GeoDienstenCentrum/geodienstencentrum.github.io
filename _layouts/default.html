@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="index,follow">
+
+        <link href="{{ site.baseurl }}/css/main.css" rel="stylesheet"  type="text/css">
+        <link href="{{ site.baseurl }}/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+        <link href="{{ site.baseurl }}/css/print.css" media="print" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="alternate" type="application/rss+xml" title="RSS Atom feed" href="atom.xml">
+        <link rel="contents" href="sitemap.html" title="Index">
+        <link rel="start" href="{{ site.url }}"/>
+        
+        <meta name="date" content="{{ site.time }}">
+        <meta name="keywords" content="geo, webrichtlijnen, diensten, advies, ruimtelijk">
+        <meta name="description" content="{{ page.description }}">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="{{ site.url}}{{ site.baseurl }}/{{ post.url }}">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:description" content="{{ page.description }}">
+        <meta name="twitter:site" content="@{{site.site-twitter}}">
+        <meta name="twitter:creator" content="@{{site.author-twitter}}">
+
+        <meta property="og:locale" content="nl_NL">
+        <meta property="og:site_name" content="{{ site.name }}">
+        <meta property="og:url" content="{{ site.url}}{{ site.baseurl }}/{{ post.url }}">
+        <meta property="og:title" content="{{ page.title }}">
+        <meta property="og:description" content="{{ page.description }}">
+        <meta property="og:type" content="article">
+        <meta property="article:published_time" content="{{ site.time }}">
+        <meta property="article:modified_time" content="{{ site.time }}">
+        <meta property="article:author" content="@{{site.author-twitter}}">
+        <meta property="article:tag" content="">
+        <meta property="article:tag" content="website">
+    </head>
+    <body>
+
+        <div class="site">
+          <header class="header">
+            <h1 class="title">{{ site.name }}</h1>
+            <!-- <a class="extra" href="{{ site.baseurl }}">home</a> -->
+          </header>
+
+          {{ content }}
+
+          <footer id="footer" class="footer">
+            <div class="contact">
+              <p>
+                {{ site.author }}<br />
+                {{ site.email }}
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/{{site.github}}" class="">github.com/{{ site.github }}</a><br />
+                <a href="https://twitter.com/{{site.twitter}}" class="">twitter.com/{{ site.site-twitter }}</a><br />
+              </p>
+            </div>
+            <div class="rss">
+              <p>
+                <a href="/atom.xml">RSS</a>
+              </p>
+            </div>
+          </footer>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,10 @@
+@import "compass/css3";
+@import "config";
+
+body { 
+  background-color: $_bodybgcol;
+}
+
+.site {
+  background-color: $_sitebgcol;
+}

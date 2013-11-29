@@ -1,0 +1,16 @@
+---
+layout: default
+title: GeoDienstenCentrum - voor toegankelijke ruimtelijke informatie - sitemap
+description: GeoDienstenCentrum voorziet in advies over toegankelijke ruimtelijke informatie en informatica en kan ook de implementatie van dat advies verzorgen
+---
+<p>Dit is een index van alle beschikbare pagina's.</p>
+<section id="home">
+  <h1>Sitemap</h1>
+  <ul>
+      <li><a href="{{ site.url }}{{ site.baseurl }}">homepage</a></li>
+    {% for post in site.posts %}
+      <li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+      <li><a href="{{ site.url }}{{ site.baseurl }}/sitemap.html">sitemap</a></li>
+  </ul>
+</section>

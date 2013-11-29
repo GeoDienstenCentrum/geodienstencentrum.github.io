@@ -1,0 +1,24 @@
+#config
+markdown:    redcarpet
+pygments:    false
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+layouts:     ./_layouts
+
+exclude:
+  - .notes
+  - Gemfile.lock
+  - Gemfile
+
+name:        GeoDienstenCentrum i/o
+
+# profile data
+# author:         mprins
+site-twitter:   GeoDiensten
+author-twitter: mc_prins
+# email:          github@geodienstencentrum.nl
+github:         GeoDienstenCentrum
+url:            http://www.geodienstencentrum.nl
+baseurl: 
+
