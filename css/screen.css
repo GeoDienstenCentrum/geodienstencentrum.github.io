@@ -44,24 +44,36 @@
 .tags {
   padding-left: 30px;
   padding-right: 30px;
+  overflow: hidden;
+  font-size: smaller;
 }
 
-/* line 28, ../_sass/_footer.scss */
+/* line 30, ../_sass/_footer.scss */
 .row {
   width: 100%;
 }
 
-/* line 32, ../_sass/_footer.scss */
+/* line 34, ../_sass/_footer.scss */
 .taglist {
   margin: 0;
   padding: 0;
   float: right;
 }
 
-/* line 38, ../_sass/_footer.scss */
+/* line 40, ../_sass/_footer.scss */
 .tag {
   float: left;
   margin-left: 1em;
+  margin-right: 0.5em;
+}
+/* line 45, ../_sass/_footer.scss */
+.tag:first-child {
+  list-style: none;
+}
+/* line 48, ../_sass/_footer.scss */
+.tag:first-child:before {
+  font-family: icomoon;
+  content: "\e608\0000a0\0000a0";
 }
 
 /* line 7, ../_sass/screen.scss */

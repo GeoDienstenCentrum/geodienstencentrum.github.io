@@ -23,6 +23,8 @@
 .tags {
   padding-left: 30px;
   padding-right: 30px;
+  overflow: hidden;
+  font-size: smaller;
 }
 
 .row {
@@ -38,4 +40,14 @@
 .tag {
   float: left;
   margin-left: 1em;
+  margin-right: 0.5em;
+
+  &:first-child {
+    list-style: none;
+
+    &:before {
+      font-family: icomoon;
+      content: "\e608\0000a0\0000a0";
+    }
+  }
 }
