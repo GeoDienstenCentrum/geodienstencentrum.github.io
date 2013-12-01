@@ -1,24 +1,28 @@
 ---
-layout: nil
+layout: 
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- pages -->
+{% for page in site.pages %}
+{% if page.layout != nil %}
+{% if page.layout != 'feed' %}
+{% if page.layout != 'error' %}
    <url>
-      <loc>{{ site.url }}{{ site.baseurl }}</loc>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>monthly</changefreq>
-      <priority>1</priority>
+      <priority>0.8</priority>
    </url>
-   <url>
-      <loc>{{ site.url }}{{ site.baseurl }}/sitemap.html</loc>
-      <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>1</priority>
-   </url>
+{% endif %}
+{% endif %}
+{% endif %}
+{% endfor %}
+<!-- posts -->
 {% for post in site.posts %}
    <url>
       <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
-      <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+      <lastmod>{{ page.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>

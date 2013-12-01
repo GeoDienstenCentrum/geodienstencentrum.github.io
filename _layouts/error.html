@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="noindex,nofollow">
+        <link rel="contents" href="sitemap.html" title="Index">
+        <link rel="start" href="{{ site.url }}"/>
+
+    </head>
+    <body>
+
+        <div class="site">
+          <header class="header">
+            <h1 class="title">{{ site.name }}</h1>
+            <!-- <a class="extra" href="{{ site.baseurl }}">home</a> -->
+          </header>
+
+          {{ content }}
+
+          <footer id="footer" class="footer">
+            <div class="contact">
+              <p>
+                {{ site.author }}<br />
+                <span aria-hidden="true" data-icon="&#xe606;"></span>{{ site.email }}<br />
+                <span aria-hidden="true" data-icon="&#xe607;"></span>{{ site.phone }}
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/{{site.github}}" class=""><span aria-hidden="true" data-icon="&#xe601;"></span>github.com/{{ site.github }}</a><br />
+                <a href="https://twitter.com/{{site.twitter}}" class=""><span aria-hidden="true" data-icon="&#xe602;"></span>twitter.com/{{ site.site-twitter }}</a><br />
+              </p>
+            </div>
+            <div class="rss">
+              <p>
+                <a href="/atom.xml" class="">
+                <span aria-hidden="true" data-icon="&#xe600;"></span>
+                <span class="screen-reader-text">RSS</span>
+                </a>
+              </p>
+            </div>
+          </footer>
+        </div>
+
+    </body>
+</html>
