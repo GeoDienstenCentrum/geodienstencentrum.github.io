@@ -8,10 +8,10 @@
   font-style: "normal";
 }
 
-/* line 3, ../_sass/_icons.scss */
+/* line 7, ../_sass/_icons.scss */
 [data-icon]:before {
   font-family: icomoon;
-  content: attr(data-icon) "\0000a0";
+  content: attr(data-icon);
   speak: none;
 }
 

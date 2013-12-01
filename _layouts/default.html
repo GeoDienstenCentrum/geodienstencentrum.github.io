@@ -35,7 +35,7 @@
         <meta property="article:published_time" content="{{ site.time }}">
         <meta property="article:modified_time" content="{{ site.time }}">
         <meta property="article:author" content="@{{site.author-twitter}}">
-      {% for tag in post.tags %}
+      {% for tag in page.tags %}
         <meta property="article:tag" content="{{ tag }}">
       {% endfor %}
     </head>
@@ -49,45 +49,8 @@
 
           {{ content }}
 
-        {% if page.tags %}
-          <footer id="tags" class="tags">
-            <div class="row">
-              <span aria-hidden="true" data-icon="&#xe608;"></span>
-              <span class="screen-reader-text">tags:</span>
-              <ul class="taglist">
-                {% for tag in page.tags %}
-<!--<a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>-->
-                  <li class="tag">{{ tag }}</li>
-                {% endfor %}
-              </ul>
-              </div>
-          </footer>
-        {% endif %}
+          {% include footer.html %}
 
-          <footer id="footer" class="footer">
-            <div class="contact">
-              <p>
-                {{ site.author }}<br />
-                <span aria-hidden="true" data-icon="&#xe606;"></span>{{ site.email }}
-                <span aria-hidden="true" data-icon="&#xe607;"></span>{{ site.phone }}
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/{{site.github}}" class=""><span aria-hidden="true" data-icon="&#xe601;"></span>github.com/{{ site.github }}</a><br />
-                <a href="https://twitter.com/{{site.twitter}}" class=""><span aria-hidden="true" data-icon="&#xe602;"></span>twitter.com/{{ site.site-twitter }}</a><br />
-              </p>
-            </div>
-            <div class="rss">
-              <p>
-                <a href="/atom.xml" class="">
-                <span aria-hidden="true" data-icon="&#xe600;"></span>
-                <span class="screen-reader-text">RSS</span>
-                </a>
-              </p>
-            </div>
-          </footer>
         </div>
-
     </body>
 </html>

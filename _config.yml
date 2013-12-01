@@ -5,7 +5,7 @@ source:      .
 destination: ./_site
 plugins:     ./_plugins
 layouts:     ./_layouts
-
+future:      true
 exclude:
   - .notes
   - Gemfile.lock
@@ -14,10 +14,11 @@ exclude:
 name:        GeoDienstenCentrum i/o
 
 # profile data
-# author:         mprins
+author:         GeoDienstenCentrum
 site-twitter:   GeoDiensten
 author-twitter: mc_prins
-# email:          github@geodienstencentrum.nl
+# email:          github@
+# phone:          nul-zes
 github:         GeoDienstenCentrum
 url:            http://www.geodienstencentrum.nl
 baseurl: 
