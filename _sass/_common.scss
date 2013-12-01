@@ -5,7 +5,6 @@
 /*****************************************************************************/
 
 body {
-  background-color: #FFF;
   text-align: center;
   font-family: sans-serif;
 }
@@ -19,12 +18,12 @@ p {
 }
 
 a {
-  color: #00a;
+  //color: #00a;
   &:hover {
-    color: #000;
+  //  color: #000;
   }
   &:visited {
-    color: #a0a;
+  //  color: #a0a;
   }
 }
 
@@ -43,7 +42,7 @@ a {
 }
 
 .posts span {
-  color: #aaa;
+  //color: #aaa;
 }
 
 /*****************************************************************************/
@@ -71,15 +70,15 @@ a {
 }
 
 .header a.extra {
-  color: #aaa;
+  //color: #aaa;
   margin-left: 1em;
 }
 
 .header a.extra:hover {
-  color: #000;
+  //color: #000;
 }
 
 .meta {
-  color: #aaa;
+  //color: #aaa;
 }
 

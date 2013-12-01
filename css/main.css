@@ -382,32 +382,18 @@
 /*****************************************************************************/
 /* line 7, ../_sass/_common.scss */
 body {
-  background-color: #FFF;
   text-align: center;
   font-family: sans-serif;
 }
 
-/* line 13, ../_sass/_common.scss */
+/* line 12, ../_sass/_common.scss */
 h1 {
   margin-bottom: 1em;
 }
 
-/* line 17, ../_sass/_common.scss */
+/* line 16, ../_sass/_common.scss */
 p {
   margin: 1em 0;
-}
-
-/* line 21, ../_sass/_common.scss */
-a {
-  color: #00a;
-}
-/* line 23, ../_sass/_common.scss */
-a:hover {
-  color: #000;
-}
-/* line 26, ../_sass/_common.scss */
-a:visited {
-  color: #a0a;
 }
 
 /*****************************************************************************/
@@ -415,20 +401,15 @@ a:visited {
 /* Home
 /*
 /*****************************************************************************/
-/* line 36, ../_sass/_common.scss */
+/* line 35, ../_sass/_common.scss */
 .posts {
   list-style-type: none;
   margin-bottom: 2em;
 }
 
-/* line 41, ../_sass/_common.scss */
+/* line 40, ../_sass/_common.scss */
 .posts li {
   line-height: 1.75em;
-}
-
-/* line 45, ../_sass/_common.scss */
-.posts span {
-  color: #aaa;
 }
 
 /*****************************************************************************/
@@ -436,7 +417,7 @@ a:visited {
 /* Site
 /*
 /*****************************************************************************/
-/* line 55, ../_sass/_common.scss */
+/* line 54, ../_sass/_common.scss */
 .site {
   text-align: justify;
   width: 42em;
@@ -449,32 +430,21 @@ a:visited {
   border-radius: 5px;
 }
 
-/* line 63, ../_sass/_common.scss */
+/* line 62, ../_sass/_common.scss */
 .header a {
   font-weight: bold;
   text-decoration: none;
 }
 
-/* line 68, ../_sass/_common.scss */
+/* line 67, ../_sass/_common.scss */
 .title {
   display: inline-block;
   margin-bottom: 2em;
 }
 
-/* line 73, ../_sass/_common.scss */
+/* line 72, ../_sass/_common.scss */
 .header a.extra {
-  color: #aaa;
   margin-left: 1em;
-}
-
-/* line 78, ../_sass/_common.scss */
-.header a.extra:hover {
-  color: #000;
-}
-
-/* line 82, ../_sass/_common.scss */
-.meta {
-  color: #aaa;
 }
 
 /* Reusable, toolbox kind of class */

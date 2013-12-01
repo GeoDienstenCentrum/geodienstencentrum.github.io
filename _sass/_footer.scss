@@ -1,6 +1,6 @@
 
 .footer {
-  color: #666;
+  color: $_footer_col;
   border-top: 4px solid $_bodybgcol;
   margin-top: 2em;
   overflow: hidden;
@@ -13,7 +13,7 @@
 }
 
 .footer a {
-  color: #8085C1;
+  color: $_footer_anchor_col;
 }
 
 .footer .rss {
@@ -24,11 +24,11 @@
   padding-left: 30px;
   padding-right: 30px;
   overflow: hidden;
-  font-size: smaller;
 }
 
 .row {
   width: 100%;
+  font-size: smaller;
 }
 
 .taglist{

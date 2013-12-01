@@ -1,0 +1,17 @@
+.tagcloud {
+  display: inline;
+}
+
+.tagcloud .taglist {
+  float: initial;
+  margin-left: 1em;
+}
+
+.tagcloud .tag:first-child {
+  list-style: initial;
+
+  &:before {
+    font-family: initial;
+    content: initial;
+  }
+}

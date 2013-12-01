@@ -1,0 +1,22 @@
+---
+layout: default
+title: GeoDienstenCentrum - gebruikte labels
+description: 
+tags: 
+summary: 
+---
+
+<article class="tags tagcloud">
+  <h2>Veel gebruikte labels</h2>
+  <!--<div class="row">-->
+  <ul class="taglist">
+{% for tag in site.tags %}
+    <li class="tag" style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70}}%">
+        <a href="{{ site.baseurl }}/tag/{{ tag | first | slugize }}/">
+            {{ tag | first }} [{{ tag | last | size }}]
+        </a>
+    </li>
+{% endfor %}
+  <ul>
+  <!--/div-->
+</article>

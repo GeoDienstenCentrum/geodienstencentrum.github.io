@@ -17,7 +17,7 @@
 
 /* line 2, ../_sass/_footer.scss */
 .footer {
-  color: #666;
+  color: #3a16ad;
   border-top: 4px solid #fca903;
   margin-top: 2em;
   overflow: hidden;
@@ -32,7 +32,7 @@
 
 /* line 15, ../_sass/_footer.scss */
 .footer a {
-  color: #8085C1;
+  color: #029797;
 }
 
 /* line 19, ../_sass/_footer.scss */
@@ -45,12 +45,12 @@
   padding-left: 30px;
   padding-right: 30px;
   overflow: hidden;
-  font-size: smaller;
 }
 
-/* line 30, ../_sass/_footer.scss */
+/* line 29, ../_sass/_footer.scss */
 .row {
   width: 100%;
+  font-size: smaller;
 }
 
 /* line 34, ../_sass/_footer.scss */
@@ -76,12 +76,33 @@
   content: "\e608\0000a0\0000a0";
 }
 
-/* line 7, ../_sass/screen.scss */
+/* line 1, ../_sass/_tagcloud.scss */
+.tagcloud {
+  display: inline;
+}
+
+/* line 5, ../_sass/_tagcloud.scss */
+.tagcloud .taglist {
+  float: initial;
+  margin-left: 1em;
+}
+
+/* line 10, ../_sass/_tagcloud.scss */
+.tagcloud .tag:first-child {
+  list-style: initial;
+}
+/* line 13, ../_sass/_tagcloud.scss */
+.tagcloud .tag:first-child:before {
+  font-family: initial;
+  content: initial;
+}
+
+/* line 8, ../_sass/screen.scss */
 body {
   background-color: #fca903;
 }
 
-/* line 11, ../_sass/screen.scss */
+/* line 12, ../_sass/screen.scss */
 .site {
-  background-color: #fdc34f;
+  background-color: #fedd9a;
 }
