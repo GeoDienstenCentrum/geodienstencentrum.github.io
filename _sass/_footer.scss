@@ -1,0 +1,41 @@
+
+.footer {
+  color: #666;
+  border-top: 4px solid $_bodybgcol;
+  margin-top: 2em;
+  overflow: hidden;
+  font-size: smaller;
+}
+
+.footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+
+.footer a {
+  color: #8085C1;
+}
+
+.footer .rss {
+  float: right;
+}
+
+.tags {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.row {
+  width: 100%;
+}
+
+.taglist{
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.tag {
+  float: left;
+  margin-left: 1em;
+}

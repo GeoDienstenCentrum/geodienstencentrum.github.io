@@ -1,1 +1,75 @@
-body{background-color:#fca903}.site{background-color:#fdc34f}
+/* CONFIGURATION */
+/* Text colors */
+@font-face {
+  font-family: "icomoon";
+  src: url('../fonts/icomoon.eot');
+  src: url('../fonts/icomoon.eot?#iefix') format('eot'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.svg') format('svg');
+  font-weight: "normal";
+  font-style: "normal";
+}
+
+/* line 3, ../_sass/_icons.scss */
+[data-icon]:before {
+  font-family: icomoon;
+  content: attr(data-icon) "\0000a0";
+  speak: none;
+}
+
+/* line 2, ../_sass/_footer.scss */
+.footer {
+  color: #666;
+  border-top: 4px solid #fca903;
+  margin-top: 2em;
+  overflow: hidden;
+  font-size: smaller;
+}
+
+/* line 10, ../_sass/_footer.scss */
+.footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+
+/* line 15, ../_sass/_footer.scss */
+.footer a {
+  color: #8085C1;
+}
+
+/* line 19, ../_sass/_footer.scss */
+.footer .rss {
+  float: right;
+}
+
+/* line 23, ../_sass/_footer.scss */
+.tags {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 28, ../_sass/_footer.scss */
+.row {
+  width: 100%;
+}
+
+/* line 32, ../_sass/_footer.scss */
+.taglist {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+/* line 38, ../_sass/_footer.scss */
+.tag {
+  float: left;
+  margin-left: 1em;
+}
+
+/* line 7, ../_sass/screen.scss */
+body {
+  background-color: #fca903;
+}
+
+/* line 11, ../_sass/screen.scss */
+.site {
+  background-color: #fdc34f;
+}
