@@ -12,6 +12,7 @@ exclude:
   - Gemfile
 
 name:        GeoDienstenCentrum i/o
+subtitle:    Toegankelijke ruimtelijke dienstverlening
 
 # profile data
 author:         GeoDienstenCentrum

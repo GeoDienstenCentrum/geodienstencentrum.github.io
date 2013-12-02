@@ -11,4 +11,6 @@ body {
 
 .site {
   background-color: $_sitebgcol;
+  border-left: $_footer_col solid 5px;
+  padding: 5px;
 }
