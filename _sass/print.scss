@@ -1,1 +1,7 @@
-/* print styles */
+/** print styles */
+@import "config";
+
+/* niet afdrukken */
+.rss {
+  display: none;
+}

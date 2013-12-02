@@ -1,12 +1,12 @@
-@import "compass/css3";
+/** screen/projector styles */
 @import "config";
-
 @import "icons";
 @import "footer";
 @import "tagcloud";
 
 body { 
   background-color: $_bodybgcol;
+  color: $text_col;
 }
 
 .site {

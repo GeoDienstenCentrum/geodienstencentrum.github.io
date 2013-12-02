@@ -17,3 +17,5 @@ _site
 
 #compass
 .sass-cache
+
+/.notes
