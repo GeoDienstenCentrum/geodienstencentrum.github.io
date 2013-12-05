@@ -4,19 +4,21 @@ title: GeoDienstenCentrum - trefwoorden overzicht
 description: Een overzicht van gebruikte trefwoorden, gerangschikt naar mate van gebruik.
 tags: 
   - trefwoorden
+  - tags
 ---
 
-<article class="tags tagcloud">
+{% assign _sizes = "xxs|xs|s||l|xl|xxl" | split: "|" %}
+
+<article class="">
   <h2>Veel gebruikte trefwoorden</h2>
-  <!--<div class="row">-->
-  <ul class="taglist">
+  <ul class="tagcloud">
 {% for tag in site.tags %}
-    <li class="tag" style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70}}%">
-        <a href="{{ site.baseurl }}/tag/{{ tag | first | slugize }}/">
-            {{ tag | first }} [{{ tag | last | size }}]
-        </a>
+
+    {% assign _class = tag | last | size | times: 7 | divided_by: site.tags.size %}
+    <li class="{{ _sizes[_class] }}">
+        <a href="{{ site.baseurl }}/tag/{{ tag | first | slugize }}/">{{ tag | first }}</a>({{ tag | last | size }})
     </li>
+
 {% endfor %}
   <ul>
-  <!--/div-->
 </article>

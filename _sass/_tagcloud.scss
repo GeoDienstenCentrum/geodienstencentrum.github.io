@@ -1,17 +1,6 @@
-.tagcloud {
-  display: inline;
-}
+@import "compass/utilities";
 
-.tagcloud .taglist {
-  float: initial;
-  margin-left: 1em;
-}
-
-.tagcloud .tag:first-child {
-  list-style: initial;
-
-  &:before {
-    font-family: initial;
-    content: initial;
-  }
+.tagcloud{
+    @include inline-list;
+    @include tag-cloud(1.2em);
 }
