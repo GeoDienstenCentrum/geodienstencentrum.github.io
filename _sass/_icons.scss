@@ -1,12 +1,12 @@
 @include font-face("icomoon", 
-		font-files("icomoon.woff", "icomoon.ttf", "icomoon.svg"), 
-		"icomoon.eot", 
-		"normal", 
-		"normal");
+                   font-files("icomoon.woff", "icomoon.ttf", "icomoon.svg"),
+                   "icomoon.eot",
+                   "normal",
+                   "normal");
 
 [data-icon]:before {
-	font-family: icomoon;
-	content: attr(data-icon);
-	//content: attr(data-icon)"\0000a0";
-	speak: none;
+  font-family: icomoon;
+  content: attr(data-icon);
+  //content: attr(data-icon)"\0000a0";
+  speak: none;
 }

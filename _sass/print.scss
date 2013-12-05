@@ -2,6 +2,9 @@
 @import "config";
 
 /* niet afdrukken */
-.rss {
+.rss,
+#skiplinks,
+#siteNav,
+#pageHeader {
   display: none;
 }

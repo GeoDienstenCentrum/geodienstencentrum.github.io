@@ -1,9 +1,11 @@
 {% if page.tags %}
   <footer id="tags" class="tags">
     <div class="row">
-      <!-- span aria-hidden="true" data-icon="&#xe608;"></span -->
-      <span class="screen-reader-text">tags:</span>
       <ul class="taglist">
+        <li class="tag"><a href="{{ site.baseurl }}/tag/">
+          <span aria-hidden="true" data-icon="&#xe602;"></span>
+          <span class="screen-reader-text">tags:</span></a>
+        </li>
         {% for tag in page.tags %}
         <li class="tag"><a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a></li>
         {% endfor %}

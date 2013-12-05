@@ -1,5 +1,4 @@
-
-.footer {
+.siteFooter {
   color: $_footer_col;
   border-top: 4px solid $_bodybgcol;
   margin-top: 2em;
@@ -7,17 +6,18 @@
   font-size: smaller;
 }
 
-.footer .contact {
+.siteFooter .contact {
   float: left;
   margin-right: 3em;
 }
 
-.footer a {
+.siteFooter a {
   color: $_footer_anchor_col;
 }
 
-.footer .rss {
+.siteFooter .rss {
   float: right;
+  padding-right: 0.5em
 }
 
 .tags {
@@ -44,10 +44,11 @@
 
   &:first-child {
     list-style: none;
-
+/*
     &:before {
       font-family: icomoon;
-      content: "\e608\0000a0\0000a0";
+      content: "\e602\0000a0\0000a0";
     }
+*/
   }
 }
