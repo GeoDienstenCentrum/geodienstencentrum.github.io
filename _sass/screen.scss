@@ -3,6 +3,7 @@
 @import "icons";
 @import "footer";
 @import "tagcloud";
+@import "sitenav";
 
 body { 
   background-color: $_bodybgcol;
@@ -13,4 +14,22 @@ body {
   background-color: $_sitebgcol;
   border-left: $_footer_col solid 5px;
   padding: 5px;
+}
+
+a.skipLink{
+  background-color: $_sitebgcol;
+  border: 2px solid $_bodybgcol;
+  display: block;
+  left: -1000em;
+  padding: 0.3em;
+  position: absolute;
+  z-index: 10;
+  
+  &:focus, &:hover{
+    top: 1em;
+    left: 1em;
+    z-index: 1000;
+    color: $_footer_col;
+    border: initial;
+  }
 }

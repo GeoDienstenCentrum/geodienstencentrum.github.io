@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl-NL">
     <head>
         <meta charset="utf-8">
         <title>{{ page.title }}</title>
         <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-        <meta name="viewport" content="width=device-width">
-        <meta name="robots" content="index,follow">
-
-        <link href="{{ site.baseurl }}/css/main.css" rel="stylesheet"  type="text/css">
-        <link href="{{ site.baseurl }}/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-        <link href="{{ site.baseurl }}/css/print.css" media="print" rel="stylesheet" type="text/css">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link rel="dns-prefetch" href="" -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css" media="screen, projection" type="text/css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/print.css" media="print" type="text/css">
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
         <link rel="alternate" type="application/rss+xml" title="RSS Atom feed" href="atom.xml">
         <link rel="contents" href="sitemap.html" title="Index">
         <link rel="start" href="{{ site.url }}"/>
-        
-        <meta name="date" content="{{ site.time }}">
-        <meta name="keywords" content="geo, webrichtlijnen, diensten, advies, ruimtelijk">
+        <link rel="author" href="/humans.txt" />
+
         <meta name="description" content="{{ page.description }}">
+        <meta name="keywords" content="{{ page.tags | join: ',' }}">
+        <meta name="robots" content="index, follow">
 
         <meta name="twitter:card" content="summary">
         <meta name="twitter:url" content="{{ site.url}}{{ site.baseurl }}/{{ post.url }}">
         <meta name="twitter:title" content="{{ page.title }}">
         <meta name="twitter:description" content="{{ page.description }}">
-        <meta name="twitter:site" content="@{{site.site-twitter}}">
-        <meta name="twitter:creator" content="@{{site.author-twitter}}">
+        <meta name="twitter:site" content="@{{ site.site-twitter }}">
+        <meta name="twitter:creator" content="@{{ site.author-twitter }}">
 
         <meta property="og:locale" content="nl_NL">
         <meta property="og:site_name" content="{{ site.name }}">
@@ -41,16 +42,34 @@
     </head>
     <body>
 
+        <div id="skipLinks" class="skipLinks">
+            <a href="#mainMenu" class="skipLink">Naar hoofdnavigatiemenu</a>
+            <a href="#mainContent" class="skipLink">Naar hoofdinhoud</a>
+        </div>
+
         <div class="site">
-          <header class="header">
+
+          <header id="siteHeader" class="siteHeader">
             <h1 class="title">{{ site.name }}</h1>
-            <!-- <a class="extra" href="{{ site.baseurl }}">home</a> -->
+            <nav id="siteNav" class="siteNav">
+                <ul>
+                    <li><a class="navItem" href="{{ site.baseurl }}/" id="mainMenu">home</a></li>
+                    <li><a class="navItem" href="{{ site.baseurl }}/over.html" id="mainMenu">over</a></li>
+                    <li><a class="navItem" href="{{ site.baseurl }}/blog.html">blog</a></li>
+                    <li><a href="{{ site.baseurl }}/sitemap.html">sitemap</a></li>
+                </ul>
+            </nav>
           </header>
 
+          <main id="mainContent" tabindex="-1">
+
           {{ content }}
+
+          </main>
 
           {% include footer.html %}
 
         </div>
+
     </body>
 </html>

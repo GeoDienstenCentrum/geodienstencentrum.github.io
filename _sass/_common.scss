@@ -1,9 +1,6 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
+@import "compass/utilities/links/link-colors";
 
+/* common */
 body {
   text-align: center;
   font-family: sans-serif;
@@ -18,21 +15,15 @@ p {
 }
 
 a {
-  //color: #00a;
-  &:hover {
-  //  color: #000;
-  }
-  &:visited {
-  //  color: #a0a;
+  @include link-colors($_footer_col, $_footer_anchor_col, $_footer_anchor_col,$_footer_anchor_col);
+  
+  &:hover,
+  &:focus {
+    outline: 2px solid;
   }
 }
 
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
+/* site */
 .site {
   text-align: justify;
   width: 42em;
@@ -41,26 +32,8 @@ a {
   @include border-radius(5px);
 }
 
-.header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .title {
   display: inline-block;
   margin-bottom: 2em;
-}
-
-.header a.extra {
-  //color: #aaa;
-  margin-left: 1em;
-}
-
-.header a.extra:hover {
-  //color: #000;
-}
-
-.meta {
-  //color: #aaa;
 }
 

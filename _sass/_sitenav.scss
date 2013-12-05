@@ -1,0 +1,21 @@
+.siteNav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $_sitebgcol;
+    @include border-radius(5px);
+    margin: 0;
+    line-height: 0;
+}
+
+.siteNav > ul {
+    padding: 0;
+}
+
+.siteNav > ul > li{
+    display: inline;
+}
+
+.navItem {
+    
+}
