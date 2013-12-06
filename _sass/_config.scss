@@ -9,6 +9,8 @@ $experimental-support-for-khtml: false;
 
 /* global imports */
 @import "compass/css3";
+@import "compass/utilities";
+@import "compass/typography";
 
 
 /* text colours */
@@ -19,7 +21,8 @@ $text_col:           #200771;
 $_footer_col:        #3A16AD;
 /* turqoise */
 $_footer_anchor_col: #016262;
-
+/* wit */
+$_sitenavcol:        #FFF;
 
 /* background colours */
 
@@ -27,3 +30,5 @@ $_footer_anchor_col: #016262;
 $_bodybgcol:         #FCA903;
 /* licht oranje */
 $_sitebgcol:         lighten($_bodybgcol,30%);
+/* bruin */
+$_sitenavbgcol:      #A46D01;

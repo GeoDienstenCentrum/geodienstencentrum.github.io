@@ -42,7 +42,7 @@ GEM
       rb-kqueue (>= 0.2)
     maruku (0.6.1)
       syntax (>= 1.0.0)
-    posix-spawn (0.3.6)
+    posix-spawn (0.3.8)
     pygments.rb (0.5.4)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)

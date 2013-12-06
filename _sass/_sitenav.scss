@@ -1,19 +1,31 @@
+// TODO media query om naar inline list of ingeklapt over te gaan bij kleine scherm breedte
 .siteNav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: $_sitebgcol;
+    position: fixed;
+    top: 0.1em;
+    right: 0.1em;
+    overflow: hidden;
     @include border-radius(5px);
-    margin: 0;
-    line-height: 0;
+    @include box-shadow;
+    line-height: 1.2em;
+    background-color: $_sitenavbgcol;
+    color: $_sitebgcol;
+
+    & a {
+        @include link-colors($_sitenavcol, $_sitenavcol, $_sitenavcol,$_sitenavcol);
+    }
+    
 }
 
 .siteNav > ul {
     padding: 0;
-}
-
-.siteNav > ul > li{
-    display: inline;
+    @include no-bullet;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    & > li {
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+    }
 }
 
 .navItem {

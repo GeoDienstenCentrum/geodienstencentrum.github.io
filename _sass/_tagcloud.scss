@@ -1,5 +1,3 @@
-@import "compass/utilities";
-
 .tagcloud{
     @include inline-list;
     @include tag-cloud(1.2em);
