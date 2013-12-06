@@ -13,8 +13,11 @@ p {
 }
 
 a {
-  @include link-colors($_footer_col, $_footer_anchor_col, $_footer_anchor_col,$_footer_anchor_col);
-  
+  @include link-colors($_footer_col, 
+                       $_footer_anchor_col, 
+                       $_footer_anchor_col,
+                       $_footer_anchor_col);
+
   &:hover,
   &:focus {
     outline: 2px solid;

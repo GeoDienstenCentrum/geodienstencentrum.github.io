@@ -1,4 +1,7 @@
 // TODO media query om naar inline list of ingeklapt over te gaan bij kleine scherm breedte
+// @media (max-width: 479px) {}
+// @media (min-width: 480px) {}
+
 .siteNav {
     position: fixed;
     top: 0.1em;
@@ -11,7 +14,10 @@
     color: $_sitebgcol;
 
     & a {
-        @include link-colors($_sitenavcol, $_sitenavcol, $_sitenavcol,$_sitenavcol);
+        @include link-colors($_sitenavcol, 
+                             $_sitenavcol,
+                             $_sitenavcol,
+                             $_sitenavcol);
     }
     
 }
