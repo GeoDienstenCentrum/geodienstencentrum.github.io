@@ -7,10 +7,27 @@ description: GeoDienstenCentrum voorziet in advies over toegankelijke ruimtelijk
 <section id="home">
   <h1>Sitemap</h1>
   <ul>
-      <li><a href="{{ site.url }}{{ site.baseurl }}">homepage</a></li>
-    {% for post in site.posts %}
-      <li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>
+    <li>
+      <ul>
+        <li><h2>Algemeen</h2></li>
+    {% for page in site.pages %}
+      {% if page.layout != nil %}
+      {% if page.layout != 'feed' %}
+      {% if page.layout != 'error' %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endif %}
+      {% endif %}
+      {% endif %}
     {% endfor %}
-      <li><a href="{{ site.url }}{{ site.baseurl }}/sitemap.html">sitemap</a> (deze pagina)</li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li><h2>Blog</h2></li>
+    {% for post in site.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+      </ul>
+    </li>
   </ul>
 </section>

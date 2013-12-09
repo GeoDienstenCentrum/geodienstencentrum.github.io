@@ -5,10 +5,10 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>{{ site.name }}</title>
     <subtitle>{{ site.subtitle }}</subtitle>
-    <link href="{{ site.url }}/{{ site.baseurl }}/atom.xml" rel="self"/>
-    <link href="{{ site.url }}/{{ site.baseurl }}"/>
+    <link href="{{ site.url }}/atom.xml" rel="self"/>
+    <link href="{{ site.url }}/"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>{{ site.url }}{{ site.baseurl }}</id>
+    <id>{{ site.url }}</id>
     <author>
         <name>{{ site.author }}</name>
         <email>{{ site.email }}</email>
@@ -19,14 +19,14 @@ layout: feed
 <!-- static -->
     <entry>
         <title>homepage</title>
-        <link href="{{ site.url }}/{{ site.baseurl }}" />"
+        <link href="{{ site.url }}/" />"
         <updated>{{ site.time | date_to_xmlschema }}</updated>
         <author>
             <name>{{ site.author }}</name>
-            <uri>{{ site.url }}/{{ site.baseurl }}</uri>
+            <uri>{{ site.url }}/</uri>
             <email>{{ site.email }}</email>
         </author>
-        <id>{{ site.url }}/{{ site.baseurl }}{{ post.id }}</id>
+        <id>{{ site.url }}/{{ post.id }}</id>
         <summary>{{ post.description }}</summary>
         <content type="text">Voor advies over en implementatie van toegankelijke ruimtelijke informatie.</content>
         <category term="homepage"/>
@@ -36,15 +36,15 @@ layout: feed
 {% for post in site.posts limit:20 %}
     <entry>
         <title>{{ post.title }}</title>
-        <link href="{{ site.url }}/{{ site.baseurl }}/{{ post.url }}"/>
+        <link href="{{ site.url }}//{{ post.url }}"/>
         <!-- <published>2003-12-13T09:17:51-08:00</published> -->
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <author>
             <name>{{ site.author }}</name>
-            <uri>{{ site.url }}/{{ site.baseurl }}</uri>
+            <uri>{{ site.url }}/</uri>
             <email>{{ site.email }}</email>
         </author>
-        <id>{{ site.url }}/{{ site.baseurl }}{{ post.id }}</id>
+        <id>{{ site.url }}/{{ post.id }}</id>
         <summary>{{ post.description }}</summary>
         <content type="html">{{ post.content | xml_escape }}</content>
     {% for category in post.categories %}

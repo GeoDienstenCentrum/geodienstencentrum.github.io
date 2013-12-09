@@ -16,7 +16,7 @@ tags:
 
     {% assign _class = tag | last | size | times: 7 | divided_by: site.tags.size %}
     <li class="{{ _sizes[_class] }}">
-        <a href="{{ site.baseurl }}/tag/{{ tag | first | slugize }}/">{{ tag | first }}</a>({{ tag | last | size }})
+        <a href="/tag/{{ tag | first | slugize }}/">{{ tag | first }}</a>({{ tag | last | size }})
     </li>
 
 {% endfor %}

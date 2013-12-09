@@ -9,7 +9,7 @@ layout:
 {% if page.layout != 'feed' %}
 {% if page.layout != 'error' %}
    <url>
-      <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+      <loc>{{ site.url }}{{ page.url }}</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
@@ -21,7 +21,7 @@ layout:
 <!-- posts -->
 {% for post in site.posts %}
    <url>
-      <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+      <loc>{{ site.url }}{{ post.url }}</loc>
       <lastmod>{{ page.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
