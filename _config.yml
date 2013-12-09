@@ -1,4 +1,11 @@
-#config
+# github config override:
+# safe: true
+# lsi: false
+# pygments: true
+# source: your top-level directory
+# see: https://help.github.com/articles/using-jekyll-with-pages
+
+# config
 markdown:    redcarpet
 pygments:    false
 source:      .
