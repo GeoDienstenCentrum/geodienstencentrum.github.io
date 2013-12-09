@@ -1,5 +1,6 @@
 /** screen/projector styles */
 @import "config";
+@import "utils";
 @import "icons";
 @import "footer";
 @import "tagcloud";
@@ -12,8 +13,17 @@ body {
 
 .site {
   background-color: $_sitebgcol;
-  border-left: $_footer_col solid 5px;
-  padding: 5px;
+  @include breakpoint(wide) {
+    border-left: $_footer_col solid 0.3em;
+  }
+  padding: 0.3em;
+  @include breakpoint(narrow){
+     width: 98%;
+
+     & h1 {
+       font-size: 1.5em;
+     }
+  }
 }
 
 a.skipLink{
@@ -25,7 +35,8 @@ a.skipLink{
   position: absolute;
   z-index: 10;
   
-  &:focus, &:hover{
+  &:focus,
+  &:hover {
     top: 1em;
     left: 1em;
     z-index: 1000;

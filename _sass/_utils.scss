@@ -1,6 +1,28 @@
 /* Reusable, toolbox kind of class */
 .screen-reader-text { 
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+/**
+ * screen breakpoint calculus.
+ */
+@mixin breakpoint($breakpoint) {
+    @if ($noMediaQueries) {
+        $_offset: 6em;
+        
+        $narrow: "(max-width: " + ($_siteWidth - 0.063em + $_offset) + ")";
+        $wide:   "(min-width: " + ($_siteWidth + $_offset)           + ")";
+    
+        @if ($breakpoint == narrow) {
+            @media #{$narrow} { @content; }
+        }
+        @else if ($breakpoint == wide) {
+            @media #{$wide} { @content; }
+        }
+    } @else {
+        // no output
+    }
+    
 }

@@ -5,13 +5,15 @@
 /* global overrides */
 $experimental-support-for-opera: false;
 $experimental-support-for-khtml: false;
-
+$legacy-support-for-ie:          false;
 
 /* global imports */
 @import "compass/css3";
 @import "compass/utilities";
 @import "compass/typography";
 
+/* voor ouwe ie */
+$noMediaQueries:     true;
 
 /* text colours */
 
@@ -32,3 +34,8 @@ $_bodybgcol:         #FCA903;
 $_sitebgcol:         lighten($_bodybgcol,30%);
 /* bruin */
 $_sitenavbgcol:      #A46D01;
+
+/* afmetingen */
+
+// 40em~640px bij 16px base pixel
+$_siteWidth:         40em;
