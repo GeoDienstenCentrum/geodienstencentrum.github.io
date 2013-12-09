@@ -1,20 +1,23 @@
 /* Reusable, toolbox kind of class */
 .screen-reader-text { 
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
 }
 
 /**
- * screen breakpoint calculus.
+ * screen breakpoint calculus; outputs media queries.
  */
 @mixin breakpoint($breakpoint) {
     @if ($noMediaQueries) {
-        $_offset: 6em;
-        
+        $_offset: 6em; // magic number
         $narrow: "(max-width: " + ($_siteWidth - 0.063em + $_offset) + ")";
         $wide:   "(min-width: " + ($_siteWidth + $_offset)           + ")";
-    
+
         @if ($breakpoint == narrow) {
             @media #{$narrow} { @content; }
         }
@@ -24,5 +27,4 @@
     } @else {
         // no output
     }
-    
 }
