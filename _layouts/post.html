@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<article lang="{{ page.language }}">
+<article lang="{{ page.language }}" role="article" itemscope itemtype="http://schema.org/BlogPosting">
   <h2>{{ page.title }}</h2>
-  <p class="meta">{{ page.date | date_to_string }}</p>
+  <time class="meta" itemprop="dateCreated" datetime="{{page.date | date: '%Y-%m-%d'}}">{{ page.date | date_to_string | downcase }}</time>
 
   <section id="summary">
     <h3><abbr title="'Too long; didn't read', samenvatting">tl;dr</abbr></h3>

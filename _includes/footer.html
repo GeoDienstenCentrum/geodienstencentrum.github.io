@@ -1,24 +1,30 @@
-<footer id="siteFooter" class="siteFooter" aria-label="contact informatie">
+<footer id="siteFooter" class="siteFooter" aria-label="contact informatie" 
+    itemscope itemtype="http://schema.org/Organization">
   <div class="contact">
     <p>
       <!-- span aria-hidden="true" data-icon="&#xe600;"></span>{{ site.author }}<br / -->
       <a href="mailto:{{site.email}}">
         <span aria-hidden="true" data-icon="&#xe60f;"></span>
-        <span>{{ site.email }}</span>
+        <span class="screen-reader-text">email:</span>
+        <span itemprop="email">{{ site.email }}</span>
       </a>
       <br />
-      <span aria-hidden="true" data-icon="&#xe60c;"></span>{{ site.phone }}
+        <span aria-hidden="true" data-icon="&#xe60c;"></span>
+        <span class="screen-reader-text">telefoon:</span>
+        <span itemprop="telephone">{{ site.phone }}</span>
     </p>
   </div>
   <div class="contact">
     <p>
-      <a href="https://github.com/{{site.github}}">
+      <a href="https://github.com/{{site.github}}" itemprop="url">
         <span aria-hidden="true" data-icon="&#xe607;"></span>
+        <span class="screen-reader-text">github:</span>
         <span>github.com/{{ site.github }}</span>
       </a>
       <br />
-      <a href="https://twitter.com/{{site.site-twitter}}">
+      <a href="https://twitter.com/{{site.site-twitter}}" itemprop="url">
         <span aria-hidden="true" data-icon="&#xe605;"></span>
+        <span class="screen-reader-text">twitter:</span>
         <span>twitter.com/{{ site.site-twitter }}</span>
       </a>
     </p>

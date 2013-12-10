@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /** screen/projector styles */
 @import "config";
 @import "utils";
@@ -17,6 +19,7 @@ body {
     border-left: $_footer_col solid 0.3em;
   }
   padding: 0.3em;
+
   @include breakpoint(narrow){
      width: 98%;
 

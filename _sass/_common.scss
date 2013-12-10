@@ -1,7 +1,7 @@
 /* common */
 body {
   text-align: center;
-  font-family: sans-serif;
+  font-family: Verdana, Helvetica Neue, Helvetica, Arial, sans-serif;;
 }
 
 h1 { 
@@ -28,7 +28,7 @@ a {
 /* site */
 .site {
   text-align: justify;
-  width: $_siteWidth;
+  max-width: $_siteWidth;
   margin: 3em auto 2em;
   line-height: 1.5em;
   @include border-radius(0.3em);
