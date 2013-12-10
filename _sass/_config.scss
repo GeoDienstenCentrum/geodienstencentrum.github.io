@@ -3,14 +3,14 @@
  */
 
 /* global overrides */
-$experimental-support-for-opera: false;
-$experimental-support-for-khtml: false;
-$legacy-support-for-ie:          false;
+
 
 /* global imports */
 @import "compass/css3";
 @import "compass/utilities";
 @import "compass/typography";
+
+@import "mixin/breakpoints";
 
 /* voor ouwe ie */
 $noMediaQueries:     true;

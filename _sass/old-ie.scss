@@ -1,7 +1,7 @@
 @import "compass/support";
 
 @import "config";
-@import 'utils';
+@import "utils";
 
 /* overrides */
 $noMediaQueries:                 false;
@@ -15,9 +15,3 @@ $legacy-support-for-ie:          true;
 }
 
 @import 'sitenav';
-
-.screen-reader-text{
-    position: relative;
-    top: 0;
-    left: 0;
-}
