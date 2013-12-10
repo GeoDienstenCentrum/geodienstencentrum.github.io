@@ -20,7 +20,8 @@ a {
 
   &:hover,
   &:focus {
-    outline: 2px solid;
+    outline: 1px solid;
+    @include box-shadow(2px 2px 1em);
   }
 }
 

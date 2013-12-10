@@ -19,36 +19,3 @@
   float: right;
   padding-right: 0.5em
 }
-
-.tags {
-  padding-left: 30px;
-  padding-right: 30px;
-  overflow: hidden;
-}
-
-.row {
-  width: 100%;
-  font-size: smaller;
-}
-
-.taglist{
-  margin: 0;
-  padding: 0;
-  float: right;
-}
-
-.tag {
-  float: left;
-  margin-left: 1em;
-  margin-right: 0.5em;
-
-  &:first-child {
-    list-style: none;
-/*
-    &:before {
-      font-family: icomoon;
-      content: "\e602\0000a0\0000a0";
-    }
-*/
-  }
-}

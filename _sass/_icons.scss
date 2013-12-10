@@ -2,7 +2,10 @@
                    font-files(
                       "icomoon.woff", "icomoon.ttf", "icomoon.svg"
                    ),
-                   "icomoon.eot");
+                   "icomoon.eot",
+                   "normal",
+                   "normal"
+                   );
 
 [data-icon]:before {
   font-family: icomoon;

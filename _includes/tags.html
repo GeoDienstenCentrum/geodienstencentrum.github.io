@@ -1,15 +1,15 @@
 {% if page.tags %}
   <footer id="tags" class="tags">
-    <div class="row">
+    
       <ul class="taglist">
         <li class="tag"><a href="/tag/">
           <span aria-hidden="true" data-icon="&#xe602;"></span>
           <span class="screen-reader-text">tags:</span></a>
         </li>
-        {% for tag in page.tags %}
+      {% for tag in page.tags %}
         <li class="tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
-        {% endfor %}
+      {% endfor %}
       </ul>
-    </div>
+    
   </footer>
 {% endif %}
