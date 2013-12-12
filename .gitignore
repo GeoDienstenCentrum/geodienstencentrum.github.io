@@ -19,3 +19,6 @@ _site
 .sass-cache
 
 /.notes
+
+/*.project
+/*.buildpath
