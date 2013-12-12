@@ -14,6 +14,8 @@ body {
 }
 
 .site {
+  @include border-radius(0.3em);
+  @include box-shadow;
   background-color: $_sitebgcol;
   @include breakpoint(wide) {
     border-left: $_footer_col solid 0.3em;
@@ -27,6 +29,13 @@ body {
        font-size: 1.5em;
      }
   }
+}
+
+.summary {
+  //background-color: $_sitenavcol;
+  //color: $_sitenavbgcol;
+  @include border-radius(0.3em);
+  padding: 0.3em;
 }
 
 a.skipLink{

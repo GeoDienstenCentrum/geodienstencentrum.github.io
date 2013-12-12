@@ -1,7 +1,7 @@
 /* common */
 body {
   text-align: center;
-  font-family: Verdana, Helvetica Neue, Helvetica, Arial, sans-serif;;
+  font-family: Verdana, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 h1 { 
@@ -25,14 +25,25 @@ a {
   }
 }
 
+abbr {
+  border-bottom: 1px dotted;
+  
+  &:hover,
+  &:focus {
+    cursor: help;
+  }
+}
+
+figure > img {
+  max-width: 100%;
+}
+
 /* site */
 .site {
   text-align: justify;
   max-width: $_siteWidth;
   margin: 3em auto 2em;
   line-height: 1.5em;
-  @include border-radius(0.3em);
-  @include box-shadow;
 }
 
 .title {
@@ -40,3 +51,7 @@ a {
   margin-bottom: 2em;
 }
 
+.summary {
+  font-size: smaller;
+  line-height: 1.1em;
+}

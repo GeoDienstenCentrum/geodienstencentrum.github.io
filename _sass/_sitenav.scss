@@ -1,7 +1,8 @@
 .siteNav {
     position: fixed;
     top: 0.1em;
-    right: 0.1em;
+    //right: 0.1em;
+    right: 1%;
     overflow: hidden;
     @include border-radius(0.3em);
     @include box-shadow;

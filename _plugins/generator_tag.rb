@@ -1,8 +1,12 @@
+# Jekyll Generator for tag index pages.
+#
 # see http://charliepark.org/tags-in-jekyll/
 
 module Jekyll
-
-  class TagIndex < Page    
+  
+  # creates the page for a tag.
+  class TagIndex < Page
+    
     def initialize(site, base, dir, tag)
       @site = site
       @base = base
@@ -14,8 +18,10 @@ module Jekyll
       self.data['tag'] = tag
       self.data['title'] = "Pagina's met het trefwoord &ldquo;"+tag+"&rdquo;"
     end
+    
   end
 
+  # creates the tag index.
   class TagGenerator < Generator
     safe true
 
@@ -32,8 +38,10 @@ module Jekyll
       index = TagIndex.new(site, site.source, dir, tag)
       index.render(site.layouts, site.site_payload)
       index.write(site.dest)
+      # index.write(site.source)
       site.pages << index
     end
+
   end
 
 end

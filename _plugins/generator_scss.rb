@@ -1,13 +1,12 @@
 #
-# Jekyll Generator for SCSS
+# Jekyll Generator for CSS from SCSS
 #
 # (File paths in this description relative to jekyll project root directory)
 # Place this file in ./_plugins
 # Place .scss files in ./_scss
 # Compiles .scss files in ./_scss to .css files in whatever directory you indicated in your config
 # Config file placed in ./_sass/config.rb
-#
- 
+# 
 require 'sass'
 require 'pathname'
 require 'compass'
@@ -23,5 +22,7 @@ module Jekyll
 				Compass::Exec::SubCommandUI.new(%w(compile)).run!
 			end
 		end
+
 	end
+
 end

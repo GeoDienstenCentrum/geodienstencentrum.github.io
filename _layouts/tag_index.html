@@ -1,18 +1,23 @@
 ---
 layout: default
 ---
-<h2 class="">{{page.title}}</h2>
+{% if site.tagblurp[page.tag] %}
+<h2>Over {{ page.tag}}</h2>
+<p class="">{{ site.tagblurp[page.tag] }}</p>
+{% endif %}
+
+<h2 class="">{{ page.title }}</h2>
 <ul>
   {% for post in site.posts %}
     {% for tag in post.tags %}
       {% if tag == page.tag %}
-        <li class="" itemscope itemtype="http://schema.org/BlogPosting">
-          <h3 class="">
-            <a class="" href='{{post.url}}' itemprop="url">{{post.title}}</a>
+        <li itemscope itemtype="http://schema.org/BlogPosting">
+          <h3>
+            <a href='{{post.url}}' itemprop="url">{{post.title}}</a>
           </h3>
           <time class="meta" datetime="{{post.date | date: '%Y-%m-%d'}}" itemprop="dateCreated">{{ post.date | date_to_string | downcase }}</time>
           <h4>Samenvatting</h4>
-          <p class="summary" itemprop="description">{{post.description}}...</p>
+          <p class="summary" itemprop="description" lang="{{post.language}}">{{post.description}}...</p>
 
           <div class="tags">
             <ul class="taglist" itemprop="keywords">
