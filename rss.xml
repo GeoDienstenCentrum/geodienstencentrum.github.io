@@ -1,0 +1,30 @@
+---
+layout: feed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>{{ site.name }}</title>
+        <link>{{ site.url }}/</link>
+        <description>{{ site.subtitle }}</description>
+        <language>nl</language>
+        <pubDate>{{ site.time | date_to_rfc822  }}</pubDate>
+        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+        <copyright>© {{ site.time | date: "%Y" }} {{ site.author }}</copyright>
+        <atom:link href="{{ site.url }}/rss.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="{{ site.url }}/atom.xml" rel="self" type="application/atom+xml"/>
+    {% for post in site.posts limit:20 %}
+        <item>
+            <title>{{ post.title }}</title>
+            <link>{{ site.url }}/{{ post.url }}</link>
+            <description>{{ post.description }}</description>
+            <author>{{ site.email }} ({{ site.author }})</author>
+         {% for category in post.categories %}
+            <category term="{{ category }}"/>
+         {% endfor %}
+            <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+            <guid>{{ site.url }}/{{ post.id }}</guid>
+        </item>
+    {% endfor %}
+    </channel>
+</rss>
