@@ -12,7 +12,11 @@
 }
 
 .siteFooter a {
-  color: $_footer_anchor_col;
+  @include link-colors($_footer_col,
+                       $_footer_anchor_col,
+                       $_footer_anchor_col_active,
+                       $_footer_anchor_col,
+                       $_footer_anchor_col);
 }
 
 .siteFooter .rss {
