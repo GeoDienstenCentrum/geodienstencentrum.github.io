@@ -1,9 +1,9 @@
-<footer id="siteFooter" class="siteFooter" aria-label="contact informatie" 
+<footer id="siteFooter" class="siteFooter vcard" aria-label="contact informatie" 
     itemscope itemtype="http://schema.org/Organization">
   <div class="contact">
     <p>
       <!-- span aria-hidden="true" data-icon="&#xe600;"></span>{{ site.author }}<br / -->
-      <a href="mailto:{{site.email}}">
+      <a href="mailto:{{site.email}}" class="email">
         <span aria-hidden="true" data-icon="&#xe60f;"></span>
         <span class="screen-reader-text">email:</span>
         <span itemprop="email">{{ site.email }}</span>
@@ -11,7 +11,7 @@
       <br />
         <span aria-hidden="true" data-icon="&#xe60c;"></span>
         <span class="screen-reader-text">telefoon:</span>
-        <span itemprop="telephone">{{ site.phone }}</span>
+        <span itemprop="telephone" class="tel">{{ site.phone }}</span>
     </p>
   </div>
   <div class="contact">

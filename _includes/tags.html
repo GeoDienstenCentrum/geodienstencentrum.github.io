@@ -2,12 +2,12 @@
   <footer id="tags" class="tags">
     
       <ul class="taglist">
-        <li class="tag"><a href="/tag/">
+        <li class="tag"><a href="/tag/" rel="tag">
           <span aria-hidden="true" data-icon="&#xe602;"></span>
           <span class="screen-reader-text">trefwoorden:</span></a>
         </li>
       {% for tag in page.tags %}
-        <li class="tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+        <li class="tag"><a href="/tag/{{ tag }}" rel="tag">{{ tag }}</a></li>
       {% endfor %}
       </ul>
     

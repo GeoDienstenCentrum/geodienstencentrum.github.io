@@ -22,13 +22,13 @@ layout: default
           <div class="tags">
             <ul class="taglist" itemprop="keywords">
               <li class="tag">
-                <a href="/tag/">
+                <a href="/tag/" rel="tag">
                   <span aria-hidden="true" data-icon="&#xe602;"></span>
                   <span class="screen-reader-text">trefwoorden:</span>
                 </a>
               </li>
             {% for tag in post.tags %}
-              <li class="tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+              <li class="tag"><a href="/tag/{{ tag }}" rel="tag">{{ tag }}</a></li>
             {% endfor %}
             </ul>
           </div>
