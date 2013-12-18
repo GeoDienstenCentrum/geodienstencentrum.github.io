@@ -1,16 +1,16 @@
-<footer id="siteFooter" class="siteFooter vcard" aria-label="contact informatie" 
+<address id="siteFooter" class="siteFooter vcard" aria-label="contact informatie" 
     itemscope itemtype="http://schema.org/Organization">
   <div class="contact">
     <p>
       <!-- span aria-hidden="true" data-icon="&#xe600;"></span>{{ site.author }}<br / -->
       <a href="mailto:{{site.email}}" class="email">
         <span aria-hidden="true" data-icon="&#xe60f;"></span>
-        <span class="screen-reader-text">email:</span>
+        <span class="visually-hidden">email:</span>
         <span itemprop="email">{{ site.email }}</span>
       </a>
       <br />
         <span aria-hidden="true" data-icon="&#xe60c;"></span>
-        <span class="screen-reader-text">telefoon:</span>
+        <span class="visually-hidden">telefoon:</span>
         <span itemprop="telephone" class="tel">{{ site.phone }}</span>
     </p>
   </div>
@@ -18,23 +18,15 @@
     <p>
       <a href="https://github.com/{{site.github}}" itemprop="url">
         <span aria-hidden="true" data-icon="&#xe607;"></span>
-        <span class="screen-reader-text">github:</span>
+        <span class="visually-hidden">github:</span>
         <span>github.com/{{ site.github }}</span>
       </a>
       <br />
       <a href="https://twitter.com/{{site.site-twitter}}" itemprop="url">
         <span aria-hidden="true" data-icon="&#xe605;"></span>
-        <span class="screen-reader-text">twitter:</span>
+        <span class="visually-hidden">twitter:</span>
         <span>twitter.com/{{ site.site-twitter }}</span>
       </a>
     </p>
   </div>
-  <div class="rss">
-    <p>
-      <a href="/atom.xml" class="">
-        <span aria-hidden="true" data-icon="&#xe608;"></span>
-        <span class="screen-reader-text">Atom feed</span>
-      </a>
-    </p>
-  </div>
-</footer>
+</address>

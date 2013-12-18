@@ -1,7 +1,11 @@
 /* common */
+html {
+  
+}
+
 body {
   text-align: center;
-  font-family: Verdana, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: $font;
 }
 
 h1 { 
@@ -55,4 +59,19 @@ figure > img {
 .summary {
   font-size: smaller;
   line-height: 1.1em;
+}
+
+blockquote {
+  padding: 1.5% 0.5em;
+  margin: 0 2% 0.5em;
+  quotes: "\2018" "\2019" "\201c" "\201d";
+  @include box-shadow(0.1em 0.1em 0.5em);
+  @include border-radius(0.3em);
+  
+  & p:before{
+    content: "\201c";
+  }
+  & p:after{
+    content: "\201d";
+  }
 }

@@ -19,7 +19,12 @@
                        $_footer_anchor_col);
 }
 
-.siteFooter .rss {
+.site-footer {
+  // text-align: justify;
+  max-width: $_siteWidth;
+  margin: 0 auto 0;
+
+}
+.rss {
   float: right;
-  padding-right: 0.5em
 }
