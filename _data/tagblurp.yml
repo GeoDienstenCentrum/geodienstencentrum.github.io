@@ -1,0 +1,9 @@
+pdok:       |
+  <abbr title="Publieke Dienstverlening Op de Kaart">PDOK</abbr> 
+  biedt een ruime keus aan digitale geo-informatie van de overheid.
+geotools:   |
+  <a href="http://geotools.org">GeoTools</a> is een open source Java bibliotheek met programma 
+  bouwstenen voor ruimtelijke data.
+openlayers: |
+  <a href="http://openlayers.org">OpenLayers</a> is een open source Javascript bibliotheek met programma 
+  bouwstenen voor interactieve web cartografie.

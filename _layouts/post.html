@@ -6,6 +6,7 @@ layout: default
   <h2><abbr title="'Too long; didn't read', samenvatting">tl;dr</abbr></h2>
   <p>{{ page.description }}</p>
 </section>
+
 <article lang="{{ page.language }}" role="article" itemscope itemtype="http://schema.org/BlogPosting">
   <h1>{{ page.title }}</h1>
   <time class="meta" itemprop="dateCreated" datetime="{{page.date | date: '%Y-%m-%d'}}">{{ page.date | date_to_string | downcase }}</time>
