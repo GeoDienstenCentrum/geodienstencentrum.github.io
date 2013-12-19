@@ -18,6 +18,8 @@ layout: default
           <time class="meta" datetime="{{post.date | date: '%Y-%m-%d'}}" itemprop="dateCreated">{{ post.date | date_to_string | downcase }}</time>
           <h4>Samenvatting</h4>
           <p class="summary" itemprop="description" lang="{{post.language}}">{{post.description}}...</p>
+          {% capture readtime %} {{ post.content | number_of_words | plus:91 | divided_by:180 }} {% endcapture %}
+          {% if readtime != '0' %}<p class="readtime">{{ readtime }} min. lezen</p>{% endif %}
           <div class="tags">
             <ul class="taglist" itemprop="keywords">
               <li class="tag">

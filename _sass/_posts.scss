@@ -47,3 +47,8 @@
 .meta {
   font-size: smaller;
 }
+
+.readtime {
+  @extend .meta;
+  font-style: italic;
+}

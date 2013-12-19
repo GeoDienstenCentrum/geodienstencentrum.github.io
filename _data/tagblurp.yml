@@ -7,3 +7,5 @@ geotools:   |
 openlayers: |
   <a href="http://openlayers.org">OpenLayers</a> is een open source Javascript bibliotheek met programma 
   bouwstenen voor interactieve web cartografie.
+ogc: |
+  Het <abbr title="Open GIS Consortium">OGC</abbr> is de GIS specifieke (open) standaarden organisatie.

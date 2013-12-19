@@ -6,20 +6,25 @@
 # see: https://help.github.com/articles/using-jekyll-with-pages
 
 # config
-markdown:    redcarpet
-pygments:    true
-source:      .
-destination: ./_site
-plugins:     ./_plugins
-layouts:     ./_layouts
-future:      true
+markdown:       redcarpet
+pygments:       true
+source:         .
+destination:    ./_site
+plugins:        ./_plugins
+layouts:        ./_layouts
+future:         true
 exclude:
   - .notes
   - Gemfile.lock
   - Gemfile
+  
+permalink:      /blog/:categories/:year-:month-:day/:title.html
+relative_permalinks: false
+paginate:       5
+paginate_path:  /blog/page:num
 
-name:        GeoDienstenCentrum i/o
-subtitle:    Toegankelijke ruimtelijke dienstverlening
+name:           GeoDienstenCentrum
+subtitle:       Toegankelijke ruimtelijke dienstverlening
 
 # profile data
 author:         GeoDienstenCentrum
