@@ -62,7 +62,7 @@ Next up is adding some expectations that we want to be fulfilled, eg. we want to
 a HTTP status code of 200 (which means OK), we want image request to have the proper mime type 
 (ie. a png8 image should be returned with ContentType: image/png and we are expecting certain 
 response times). These are set up by adding 
-[Response Assertions](href="http://jakarta.apache.org/jmeter/usermanual/component_reference.html#Response_Assertion "Response Assertion docs") 
+[Response Assertions]("http://jakarta.apache.org/jmeter/usermanual/component_reference.html#Response_Assertion "Response Assertion docs") 
 to our JMeter script.
 
 Now we can add some advanced options such as 
