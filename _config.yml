@@ -5,7 +5,7 @@
 # source: your top-level directory
 # see: https://help.github.com/articles/using-jekyll-with-pages
 
-# config
+# config, see: http://jekyllrb.com/docs/configuration/
 markdown:       redcarpet
 pygments:       true
 source:         .
@@ -13,10 +13,14 @@ destination:    ./_site
 plugins:        ./_plugins
 layouts:        ./_layouts
 future:         true
+show_drafts:    nil
 exclude:
   - .notes
   - Gemfile.lock
   - Gemfile
+include:        []
+
+timezone:       Europe/Amsterdam
   
 permalink:      /blog/:categories/:year-:month-:day/:title.html
 relative_permalinks: false
