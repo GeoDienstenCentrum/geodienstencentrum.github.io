@@ -33,7 +33,9 @@ $_sitenavcol:        #FFF;
 /* oranje */
 $_bodybgcol:         #FCA903;
 /* licht oranje */
-$_sitebgcol:         lighten($_bodybgcol,30%);
+$_blockquotebgcol:   lighten($_bodybgcol,30%);
+/* off-wit */
+$_sitebgcol:         #F8F4EC;
 /* paarsblauw */
 $_sitenavbgcol:      #3A16AD;
 

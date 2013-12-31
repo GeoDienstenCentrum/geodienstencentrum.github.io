@@ -45,7 +45,7 @@ figure > img {
 
 /* site */
 .site {
-  text-align: justify;
+  text-align: left;
   max-width: $_siteWidth;
   margin: 3em auto 2em;
   line-height: 1.5em;
@@ -67,6 +67,7 @@ blockquote {
   quotes: "\2018" "\2019" "\201c" "\201d";
   @include box-shadow(0.1em 0.1em 0.5em);
   @include border-radius(0.3em);
+  background: $_blockquotebgcol;
   
   & p:before{
     content: "\201c";
