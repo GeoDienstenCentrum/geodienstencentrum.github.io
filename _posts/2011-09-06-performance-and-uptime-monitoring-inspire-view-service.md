@@ -7,8 +7,7 @@ comments: true
 categories: [monitoring, performance]
 tags: [inspire, performance, python, rrdtool, tooling]
 language: en-GB
-description: Measuring uptime and performance of an Inspire view service (<abbr title="Web Map Service">WMS</abbr>) 
-  using a round-robin database and python.
+description: Measuring uptime and performance of an Inspire view service using a round-robin database and python.
 ---
 
 The [Inspire directive](http://inspire.jrc.ec.europa.eu/ has some fairly strict requirements 

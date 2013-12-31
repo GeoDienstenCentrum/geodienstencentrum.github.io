@@ -67,10 +67,10 @@ to our JMeter script.
 
 Now we can add some advanced options such as 
 [Logic Controllers](http://jakarta.apache.org/jmeter/usermanual/component_reference.html#logic_controllers "Logic Controllers docs") 
-and [Timers](href="http://jakarta.apache.org/jmeter/usermanual/component_reference.html#timers "Timers docs") 
+and [Timers](http://jakarta.apache.org/jmeter/usermanual/component_reference.html#timers "Timers docs") 
 to further randomize the load and number of sessions to our service. And finally we want to have our 
 results so we add in some 
-[Listeners]( http://jakarta.apache.org/jmeter/usermanual/component_reference.html#listeners "Listeners docs") 
+[Listeners](http://jakarta.apache.org/jmeter/usermanual/component_reference.html#listeners "Listeners docs") 
 such as graphs and tables. These Listeners can also be used to export the test results to an XML 
 or CSV formatted file or an image.
 

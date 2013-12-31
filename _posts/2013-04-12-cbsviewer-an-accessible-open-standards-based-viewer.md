@@ -6,10 +6,11 @@ author: prinsmc
 language: en-GB
 categories: [accessibility, webmapping]
 tags: [accessibility, geotools, ogc, openlayers, openls, wcag2]
-description: 'Developing a webmapping application together with Statistics Netherlands to replace 
-  their current offerings of webmapping such as "CBS in uw Buurt" which have various accessibility 
-  issues and has Google looking in over your shoulder.'
+description: "Developing a webmapping application together with Statistics Netherlands to replace 
+  their current offerings of webmapping such as 'CBS in uw Buurt' which have various accessibility 
+  issues and has Google looking in over your shoulder."
 ---
+
 The past months I've been busy developing a web mapping application together with 
 [Statistics Netherlands](http://www.cbs.nl/) to replace their current offerings of web mapping such 
 as [CBS in uw Buurt](http://www.cbsinuwbuurt.nl/) which have various accessibility issues and has 
