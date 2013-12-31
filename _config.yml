@@ -1,6 +1,6 @@
 # github config override:
 # safe: true
-# lsi: false
+lsi: false
 # pygments: true
 # source: your top-level directory
 # see: https://help.github.com/articles/using-jekyll-with-pages
@@ -38,3 +38,8 @@ email:          github@
 phone:          +31 6 0000 0000
 github:         GeoDienstenCentrum
 url:            http://www.geodienstencentrum.nl
+adres: 
+  straat:         straatnaam 1
+  postcode:       0000AA
+  plaatsnaam:     plaatsnaam
+  land:           Nederland

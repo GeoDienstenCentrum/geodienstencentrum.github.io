@@ -1,7 +1,6 @@
 .siteNav {
     position: fixed;
     top: 3em;
-    //@include breakpoint(wide) { top: 3em; }
     @include breakpoint(narrow) { top: 0.2em; }
     right: 1%;
     overflow: hidden;
