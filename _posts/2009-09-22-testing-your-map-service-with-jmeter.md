@@ -8,7 +8,9 @@ categories: [monitoring, performance]
 tags: [jmeter, tooling, performance, monitoring]
 language: en-GB
 description: Using Apache JMeter and some random address data we can run performance tests against a mapservice.
+image: 2009-09-22-responseresult.jpg
 ---
+
 [Apache JMeter](http://jakarta.apache.org/jmeter/ "JMeter website") is a powerful tool for load 
 testing functional behaviour and performance of applications over the network. It is however not 
 the most accessible or easy to use tool, mostly because of the overwhelming amount of options. Once 
