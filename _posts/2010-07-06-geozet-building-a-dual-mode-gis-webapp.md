@@ -8,6 +8,7 @@ comments: true
 categories: [accessibility, webmapping]
 tags: [geotools, geozet, pdok]
 description: Within the GEOZET viewer project an accessible GIS web viewer is being developed by Geonovum as one of the launching products of the PDOK programme.
+image: 2010-07-06-geozet-core-screen.png
 ---
 
 Within the GEOZET viewer project a dual mode GIS web application is being developed by 
