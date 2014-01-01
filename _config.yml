@@ -45,3 +45,7 @@ adres:
   postcode:       0000AA
   plaatsnaam:     plaatsnaam
   land:           Nederland
+
+
+jekyll-press:
+  exclude: '*.css'
