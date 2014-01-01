@@ -8,15 +8,17 @@ tags:
 ---
 
 <section id="blog" itemscope itemtype="http://schema.org/Blog">
-  <h1>Blog</h1>
-  <p>Een overzicht van de artikelen op deze website.</p>
+  <h1>Artikelen</h1>
+  <p itemprop="description">Een overzicht van de artikelen op deze website.</p>
   {% if site.posts.size > 0 %}
     <ul class="posts">
     {% for post in site.posts %}
-      <li itemprop="blogPost"><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}" itemprop="url">{{ post.title }}</a>
+      <li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+          <time itemprop="dateCreated" datetime="{{post.date | date: '%Y-%m-%d'}}">{{ post.date | date_to_string }}</time> 
+          &raquo; <a href="{{ post.url }}" itemprop="url name">{{ post.title }}</a>
           {% capture readtime %} {{ post.content | number_of_words | plus:91 | divided_by:180 }} {% endcapture %}
           {% if readtime != '0' %}
-          	<span class="readtime">(ongeveer{{ readtime }} min. lezen)</span>
+          <span class="readtime">(ongeveer{{ readtime }} min. lezen)</span>
           {% endif %}
       </li>
     {% endfor %}
