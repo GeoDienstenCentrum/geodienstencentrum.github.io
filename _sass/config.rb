@@ -1,6 +1,5 @@
 # Require any additional compass plugins here.
 
-# environment     = :development
 environment     = :production
 
 # Set this to the root of your project when deployed:

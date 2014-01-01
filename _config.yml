@@ -20,6 +20,8 @@ exclude:
   - Gemfile
 include:        []
 
+production:     true
+
 timezone:       Europe/Amsterdam
   
 permalink:      /blog/:categories/:year-:month-:day/:title.html

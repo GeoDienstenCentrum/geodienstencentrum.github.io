@@ -1,0 +1,5 @@
+# use bundle exec jekyll build --config "_config.yml,_config-dev.yml" --drafts
+# or bundle exec jekyll serve -w --config "_config.yml,_config-dev.yml" --drafts
+
+production: false
+url:        http://localhost

@@ -11,7 +11,7 @@ require 'sass'
 require 'pathname'
 require 'compass'
 require 'compass/exec'
- 
+
 module Jekyll
  
 	class CompassGenerator < Generator
@@ -19,7 +19,13 @@ module Jekyll
 
 		def generate(site)
 			Dir.chdir File.expand_path('../_sass', File.dirname(__FILE__)) do
-				Compass::Exec::SubCommandUI.new(%w(compile)).run!
+				STDERR.puts "\nVariable 'production' is #{site.config["production"].inspect}."
+				if site.config["production"]
+					Compass::Exec::SubCommandUI.new(%w(compile)).run!
+				else
+					#Compass::Exec::SubCommandUI.new(['compile','-e','development','-s','expanded','--force','--debug-info']).run!
+					Compass::Exec::SubCommandUI.new(%w(compile -e development -s expanded --force --debug-info)).run!
+				end
 			end
 		end
 
