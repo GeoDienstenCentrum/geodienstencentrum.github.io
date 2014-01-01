@@ -9,6 +9,7 @@ tags: [accessibility, geotools, ogc, openlayers, openls, wcag2]
 description: "Developing a webmapping application together with Statistics Netherlands to replace 
   their current offerings of webmapping such as 'CBS in uw Buurt' which have various accessibility 
   issues and has Google looking in over your shoulder."
+image: 2013-04-12-screencapture.png
 ---
 
 The past months I've been busy developing a web mapping application together with 
