@@ -16,14 +16,12 @@ layout: feed
     {% for post in site.posts limit:20 %}
         <item>
             <title>{{ post.title }}</title>
-            <link>{{ site.url }}/{{ post.url }}</link>
+            <link>{{ site.url }}{{ post.url }}</link>
             <description>{{ post.description }}</description>
             <author>{{ site.email }} ({{ site.author }})</author>
-         {% for category in post.categories %}
-            <category term="{{ category }}"/>
-         {% endfor %}
+            {% for category in post.categories %}<category term="{{ category }}"/>{% endfor %}
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-            <guid>{{ site.url }}/{{ post.id }}</guid>
+            <guid>{{ site.url }}{{ post.id }}</guid>
         </item>
     {% endfor %}
     </channel>

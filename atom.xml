@@ -32,12 +32,25 @@ layout: feed
         <content type="text">Voor advies over en implementatie van toegankelijke ruimtelijke informatie.</content>
         <category term="homepage"/>
     </entry>
-
+    <entry>
+        <title>sitemap</title>
+        <link href="{{ site.url }}/sitemap.html" />
+        <updated>{{ site.time | date_to_xmlschema }}</updated>
+        <author>
+            <name>{{ site.author }}</name>
+            <uri>{{ site.url }}/</uri>
+            <email>{{ site.email }}</email>
+        </author>
+        <id>{{ site.url }}/sitemap.html</id>
+        <summary>{{ post.description }}</summary>
+        <content type="text">Sitemap voor {{ site.name }}</content>
+        <category term="sitemap"/>
+    </entry>
 <!-- posts -->
 {% for post in site.posts limit:20 %}
     <entry>
         <title>{{ post.title }}</title>
-        <link href="{{ site.url }}/{{ post.url }}"/>
+        <link href="{{ site.url }}{{ post.url }}"/>
         <!-- <published>2003-12-13T09:17:51-08:00</published> -->
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <author>
@@ -45,12 +58,10 @@ layout: feed
             <uri>{{ site.url }}/</uri>
             <email>{{ site.email }}</email>
         </author>
-        <id>{{ site.url }}/{{ post.id }}</id>
+        <id>{{ site.url }}{{ post.id }}</id>
         <summary>{{ post.description }}</summary>
         <content type="html">{{ post.content | xml_escape }}</content>
-    {% for category in post.categories %}
-        <category term="{{ category }}"/>
-    {% endfor %}
+        {% for category in post.categories %}<category term="{{ category }}"/>{% endfor %}
     </entry>
 {% endfor %}
 
