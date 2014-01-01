@@ -2,26 +2,21 @@
 layout: default
 ---
 
-<section id="summary" class="summary">
+<section id="summary" class="summary" itemprop="description">
   <h2><abbr title="'Too long; didn't read', samenvatting">tl;dr</abbr></h2>
   <p>{{ page.description }}</p>
 </section>
 
 <article lang="{{ page.language }}" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-  <h1>{{ page.title }}</h1>
+  <h1 itemprop="name">{{ page.title }}</h1>
   <time class="meta" itemprop="dateCreated" datetime="{{page.date | date: '%Y-%m-%d'}}">{{ page.date | date_to_string | downcase }}</time>
 
-  <section class="post">
+  <section class="post" itemprop="articleBody">
     {{ content }}
   </section>
 
   {% include tags.html %}
 
-<!-- div id="navigation">
-  {% if page.previous %}<a class="previous" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>{% endif %} 
-  {% if page.previous and page.next %} | {% endif %}
-  {% if page.next %}<a class="next" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>{% endif %}
-</div -->
 
 <!-- div id="related">
   <h2>Gerelateerde artikelen</h3>
@@ -33,3 +28,12 @@ layout: default
 </div -->
 
 </article>
+
+
+<div id="navigation" class="navigation">
+  {% if page.previous %}<a class="previous" href="{{ page.previous.url }}" title="vorige artikel">
+    &laquo;&nbsp;<span class="visually-hidden">vorige artikel: </span>{{ page.previous.title }}</a>{% endif %} 
+  {% if page.previous and page.next %} | {% endif %}
+  {% if page.next %}<a class="next" href="{{ page.next.url }}" title="volgende artikel">
+    <span class="visually-hidden">volgende artikel: </span>{{ page.next.title }}&nbsp;&raquo;</a>{% endif %}
+</div>
