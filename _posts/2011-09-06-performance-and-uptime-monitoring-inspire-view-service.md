@@ -8,6 +8,7 @@ categories: [monitoring, performance]
 tags: [inspire, performance, python, rrdtool, tooling]
 language: en-GB
 description: Measuring uptime and performance of an Inspire view service using a round-robin database and python.
+image: 2011-09-06-ehs-4h.png
 ---
 
 The [Inspire directive](http://inspire.jrc.ec.europa.eu/ has some fairly strict requirements 
