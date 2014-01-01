@@ -31,9 +31,9 @@ layout: default
 
 
 <div id="navigation" class="navigation">
-  {% if page.previous %}<a class="previous" href="{{ page.previous.url }}" title="vorige artikel">
+  {% if page.previous %}<a class="previous" href="{{ page.previous.url }}" title="vorige artikel" rel="prev">
     &laquo;&nbsp;<span class="visually-hidden">vorige artikel: </span>{{ page.previous.title }}</a>{% endif %} 
   {% if page.previous and page.next %} | {% endif %}
-  {% if page.next %}<a class="next" href="{{ page.next.url }}" title="volgende artikel">
+  {% if page.next %}<a class="next" href="{{ page.next.url }}" title="volgende artikel" rel="next">
     <span class="visually-hidden">volgende artikel: </span>{{ page.next.title }}&nbsp;&raquo;</a>{% endif %}
 </div>
