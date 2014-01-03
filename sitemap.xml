@@ -11,8 +11,8 @@ layout: nil
    <url>
       <loc>{{ site.url }}{{ page.url }}</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
    </url>
   {% endif %}
   {% endif %}
@@ -22,8 +22,8 @@ layout: nil
 {% for post in site.posts %}
    <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
-      <lastmod>{{ post.time | date: '%Y-%m-%d' }}</lastmod>
-      <changefreq>weekly</changefreq>
+      <lastmod>{{ post.date | date: '%Y-%m-%d' }}</lastmod>
+      <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
 {% endfor %}
