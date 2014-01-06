@@ -10,16 +10,14 @@ tags:
 
 {% assign _sizes = "xxs|xs|s||l|xl|xxl" | split: "|" %}
 
-<article class="">
-  <h2>Veel gebruikte trefwoorden</h2>
+<article class="" id="tagcloud">
+  <h1 role="heading">Veel gebruikte trefwoorden</h1>
   <ul class="tagcloud">
 {% for tag in site.tags %}
-
     {% assign _class = tag | last | size | times: 7 | divided_by: site.tags.size %}
     <li class="{{ _sizes[_class] }}">
         <a href="/tag/{{ tag | first | slugize }}/">{{ tag | first }}</a>({{ tag | last | size }})
     </li>
-
 {% endfor %}
   <ul>
 </article>
