@@ -48,4 +48,4 @@ adres:
 
 
 jekyll-press:
-  exclude: '*.css'
+  exclude: ['*.css']

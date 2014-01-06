@@ -5,4 +5,4 @@ production:   false
 url:          http://localhost
 
 jekyll-press: 
-  exclude: '*.*'
+  exclude: ['*.css', '*.html', '*.js', 'css/*']

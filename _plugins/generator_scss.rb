@@ -24,7 +24,7 @@ module Jekyll
 					Compass::Exec::SubCommandUI.new(%w(compile)).run!
 				else
 					#Compass::Exec::SubCommandUI.new(['compile','-e','development','-s','expanded','--force','--debug-info']).run!
-					Compass::Exec::SubCommandUI.new(%w(compile -e development -s expanded --force --debug-info)).run!
+					Compass::Exec::SubCommandUI.new(%w(compile -e development -s expanded --debug-info)).run!
 				end
 			end
 		end

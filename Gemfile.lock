@@ -16,6 +16,7 @@ GEM
     css_press (0.3.2)
       csspool-st (= 3.1.2)
       json
+    cssminify (1.0.2)
     csspool-st (3.1.2)
     execjs (2.0.2)
     fast-stemmer (1.0.2)
@@ -91,6 +92,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  cssminify
   github-pages
   jekyll-press
   pygments.rb (= 0.5.0)
