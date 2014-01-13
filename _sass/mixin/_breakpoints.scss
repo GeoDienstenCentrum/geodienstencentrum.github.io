@@ -2,7 +2,7 @@
  * screen breakpoint calculus; outputs media queries.
  */
 @mixin breakpoint($breakpoint) {
-    @if ($noMediaQueries) {
+    @if ($useMediaQueries) {
         // magic numbers
         $_offset: 6em; 
         $_offset-max: $_offset + 24em;
