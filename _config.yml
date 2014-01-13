@@ -30,7 +30,7 @@ paginate:       5
 paginate_path:  /blog/page:num
 
 name:           GeoDienstenCentrum
-subtitle:       Toegankelijke ruimtelijke dienstverlening
+subtitle:       Toegankelijke ruimtelijke informatievoorziening
 
 # profile data
 author:         GeoDienstenCentrum
@@ -47,5 +47,3 @@ adres:
   land:           Nederland
 
 
-jekyll-press:
-  exclude: ['*.css']
