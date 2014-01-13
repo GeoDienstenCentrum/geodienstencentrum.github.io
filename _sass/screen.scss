@@ -17,13 +17,16 @@ body {
   @include border-radius(0.3em);
   @include box-shadow;
   background-color: $_sitebgcol;
-  @include breakpoint(wide) {
+  @include breakpoint(regular) {
     border-left: $_footer_col solid 0.3em;
+  }
+  @include breakpoint(wide) {
+    // border-left: $_footer_col solid 0.3em;
   }
   padding: 0.3em;
 
   @include breakpoint(narrow) {
-     width: 98%;
+     max-width: 98%;
 
      & h1 {
        font-size: 1.5em;
@@ -32,8 +35,8 @@ body {
 }
 
 .summary {
-  //background-color: $_sitenavcol;
-  //color: $_sitenavbgcol;
+  // background-color: $_sitenavcol;
+  // color: $_sitenavbgcol;
   @include border-radius(0.3em);
   padding: 0.3em;
 }

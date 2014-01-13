@@ -1,8 +1,17 @@
 .siteNav {
     position: fixed;
     top: 3em;
-    @include breakpoint(narrow) { top: 0.2em; }
     right: 1%;
+    @include breakpoint(narrow) { 
+        top: 0.2em;
+    }
+    @include breakpoint(regular) {
+    }
+    @include breakpoint(wide) {
+        left: calc(50% + #{($_siteWidth / 2 + 5em)});
+        right: initial;
+    }
+
     overflow: hidden;
     @include border-radius(0.3em);
     @include box-shadow;
@@ -18,7 +27,6 @@
                              $_sitenavcol);
         white-space: nowrap;
     }
-    
 }
 
 .siteNav > ul {
