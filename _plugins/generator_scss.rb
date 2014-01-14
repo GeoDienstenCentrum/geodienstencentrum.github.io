@@ -21,9 +21,8 @@ module Jekyll
 			Dir.chdir File.expand_path('../_sass', File.dirname(__FILE__)) do
 				STDERR.puts "\nVariable 'production' is #{site.config["production"].inspect}."
 				if site.config["production"]
-					Compass::Exec::SubCommandUI.new(%w(compile)).run!
+					Compass::Exec::SubCommandUI.new(%w(compile -e production --force)).run!
 				else
-					#Compass::Exec::SubCommandUI.new(['compile','-e','development','-s','expanded','--force','--debug-info']).run!
 					Compass::Exec::SubCommandUI.new(%w(compile -e development -s expanded --debug-info)).run!
 				end
 			end
