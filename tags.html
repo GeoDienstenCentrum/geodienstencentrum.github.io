@@ -16,8 +16,8 @@ tags:
 {% for tag in site.tags %}
     {% assign _class = tag | last | size | times: 7 | divided_by: site.tags.size %}
     <li class="{{ _sizes[_class] }}">
-        <a href="/tag/{{ tag | first | slugize }}/" rel="tag" title="komt {{ tag | last | size }} keer voor">{{ tag | first }}</a>
+        <a href="/tag/{{ tag | first | slugize }}/" rel="tag" title="Komt {{ tag | last | size }} keer voor">{{ tag | first }}</a>
     </li>
 {% endfor %}
-  <ul>
+  </ul>
 </article>
