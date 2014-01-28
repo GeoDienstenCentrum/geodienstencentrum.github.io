@@ -8,6 +8,11 @@ tags:
   - toegankelijkheid
   - informatie
   - geo
+  - wcag2
+  - diensten
+permalink: /over.html
 ---
 
-<em>website in opbouw</em>
+_website in opbouw_
+
+#Over Geodiensten Centrum
