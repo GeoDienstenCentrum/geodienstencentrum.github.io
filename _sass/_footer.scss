@@ -4,11 +4,12 @@
   margin-top: 2em;
   overflow: hidden;
   font-size: smaller;
+  line-height: 1.2em;
 }
 
 .siteFooter .contact {
   float: left;
-  margin-right: 3em;
+  margin-right: 1.1em;
 }
 
 .siteFooter a {
@@ -20,11 +21,10 @@
 }
 
 .site-footer {
-  // text-align: justify;
   max-width: $_siteWidth;
   margin: 0 auto 0;
-
 }
+
 .rss {
   float: right;
 }

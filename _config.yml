@@ -36,14 +36,15 @@ subtitle:       Toegankelijke ruimtelijke informatievoorziening
 author:         GeoDienstenCentrum
 site-twitter:   GeoDiensten
 author-twitter: mc_prins
-email:          github@
-phone:          +31 6 0000 0000
+email:          mark@geodienstencentrum.nl
+phone:          
 github:         GeoDienstenCentrum
 url:            http://www.geodienstencentrum.nl
+kvk:            59932953
 adres: 
-  straat:         straatnaam 1
-  postcode:       0000AA
-  plaatsnaam:     plaatsnaam
+  straat:         Henrica van Erpweg 53
+  postcode:       3732 BC
+  plaatsnaam:     De Bilt
   land:           Nederland
 
 

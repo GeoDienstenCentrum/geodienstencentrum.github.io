@@ -18,14 +18,21 @@
     <p>
       <!-- span aria-hidden="true" data-icon="&#xe600;"></span>{{ site.author }}<br / -->
       <a href="mailto:{{site.email}}" class="email">
-        <span aria-hidden="true" data-icon="&#xe60f;"></span>
+        <span aria-hidden="true" data-icon="&#xe615;"></span>
         <span class="visually-hidden">email:</span>
         <span itemprop="email">{{ site.email }}</span>
       </a>
-      <br />
+      <!-- br />
         <span aria-hidden="true" data-icon="&#xe60c;"></span>
         <span class="visually-hidden">telefoon:</span>
         <span itemprop="telephone" class="tel">{{ site.phone }}</span>
+      -->
+      <br />
+        <a href="https://www.openkvk.nl/{{ site.kvk }}" class="kvk">
+          <span aria-hidden="true" data-icon="&#xe616;"></span>
+          <span class="visually-hidden">KvK nummer:</span>
+          <span itemprop="kvk-nummer">KvK: {{ site.kvk }}</span>
+        </a>
     </p>
   </div>
   <div class="contact">
