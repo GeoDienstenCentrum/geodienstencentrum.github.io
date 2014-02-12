@@ -49,7 +49,7 @@ a.skipLink{
   padding: 0.3em;
   position: absolute;
   z-index: 10;
-  
+
   &:focus,
   &:hover {
     top: 1em;
@@ -57,5 +57,21 @@ a.skipLink{
     z-index: 1000;
     color: $_footer_col;
     border: initial;
+  }
+}
+
+.twitter-widget{
+  @include breakpoint(narrow) {
+    display: none;
+  }
+  @include breakpoint(regular) {
+    display: none;
+  }
+  @include breakpoint(wide) {
+    width: 15em;
+    top: 12em;
+    position: fixed;
+    right: 1.5em;
+    display: initial;
   }
 }
