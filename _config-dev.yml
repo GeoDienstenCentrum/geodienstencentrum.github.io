@@ -3,3 +3,4 @@
 
 production:   false
 url:          http://localhost
+show_drafts:  true
