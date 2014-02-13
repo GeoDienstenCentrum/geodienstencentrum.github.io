@@ -38,6 +38,7 @@ body {
   // background-color: $_sitenavcol;
   // color: $_sitenavbgcol;
   @include border-radius(0.3em);
+  @include box-shadow;
   padding: 0.3em;
 }
 
@@ -60,6 +61,7 @@ a.skipLink{
   }
 }
 
+/* only display the widget on a big screen.*/
 .twitter-widget{
   @include breakpoint(narrow) {
     display: none;

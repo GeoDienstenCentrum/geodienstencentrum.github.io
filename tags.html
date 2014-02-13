@@ -13,8 +13,9 @@ tags:
 <article class="" id="tagcloud">
   <h1 role="heading">Veel gebruikte trefwoorden</h1>
   <ul class="tagcloud">
+  <!-- times 7, 14, 21,... -->
 {% for tag in site.tags %}
-    {% assign _class = tag | last | size | times: 7 | divided_by: site.tags.size %}
+    {% assign _class = tag | last | size | times: 21 | divided_by: site.tags.size %}
     <li class="{{ _sizes[_class] }}">
         <a href="/tag/{{ tag | first | slugize }}/" rel="tag" title="Komt {{ tag | last | size }} keer voor">{{ tag | first }}</a>
     </li>
