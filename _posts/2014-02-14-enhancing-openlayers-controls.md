@@ -66,6 +66,9 @@ Modified and enhanced markup:
 </div>
 ```
 
+These modifications were proposed in [PR 1708](https://github.com/openlayers/ol3/pull/1708) and 
+[PR 1249](https://github.com/openlayers/openlayers/pull/1249)
+
 ## LayerSwitcher
 
 The LayerSwitcher suffers from some of the same problems as noted above, with the difference that 
