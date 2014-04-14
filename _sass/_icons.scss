@@ -7,7 +7,7 @@
                    "normal"
                    );
 
-[data-icon]:before {
+[data-icon]::before {
   font-family: icomoon;
   content: attr(data-icon);
   //met extra spatie: content: attr(data-icon)"\0000a0";
@@ -15,7 +15,7 @@
 }
 
 
-time:before {
+time::before {
   font-family: icomoon;
   content: "\e60f\0000a0";
   font-size: initial;

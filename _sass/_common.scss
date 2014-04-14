@@ -76,10 +76,10 @@ blockquote {
   @include border-radius(0.3em);
   background: $_blockquotebgcol;
   
-  & p:before{
+  & p::before{
     content: "\201c";
   }
-  & p:after{
+  & p::after{
     content: "\201d";
   }
 }
