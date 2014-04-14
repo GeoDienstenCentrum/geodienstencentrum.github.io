@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DokuWikiSpatial, spatial extensions for your wiki
-date: 2014-04-14 22:31
+title: "DokuWikiSpatial: maps for your wiki"
+date: 2014-04-14 23:31
 author: prinsmc
 language: en-GB
 categories: [webmapping, dokuwiki]
@@ -10,7 +10,7 @@ description: "A brief introduction to DokuWiki and the mapping capabilities prov
 image: 2014-04-12-openlayersmap.png
 ---
 
-## Spatially enable your Wiki, part 1
+## Spatially enable your Wiki, part 1: mapping
 
 In this series we will look at spatially enabling the DokuWiki system by adding mapping, 
 data management and spatial indexing with the help of geotagging and other means. 
