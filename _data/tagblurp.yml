@@ -11,14 +11,16 @@ ogc: |
   Het <abbr title="Open GIS Consortium">OGC</abbr> is de GIS specifieke (open) standaarden organisatie.
 inspire: |
   De Europese richtlijn INSPIRE zorgt ervoor dat alle Europese lidstaten milieugerelateerde geo-informatie 
-  publicieren op een geharmoniseerde manier.
+  publiceren op een geharmoniseerde manier.
 wcag2: |
-  De "Web Content Accessibility Guidelines" versie 2.0 zijn een open standaard om kwaliteit van informatie 
-  overdracht op het internet te waarborgen. Meer informatie over WCAG is te vinden op de 
-  <a href="http://www.w3.org/TR/WCAG20/">W3C WCAG2 website</a>.
+  De <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> versie 2.0 zijn een open 
+  standaard om kwaliteit van informatie overdracht op het internet te waarborgen. 
+  Meer informatie over WCAG is te vinden op de <a href="http://www.w3.org/TR/WCAG20/">W3C WCAG2 website</a>.
 GeoCMS: |
   Een <abbr title="Content Management Systeem">CMS</abbr> dat specifiek is ingericht voor publicatie van 
   ruimtelijke informatie.
 openstreetmap: |
-  <a href="http://www.openstreetmap.org/about">OpenStreetMap</a> is een van origine Engels vrijwilligersproject om een 
-  vrije wereldkaart op te bouwen.
+  <a href="http://www.openstreetmap.org/about">OpenStreetMap</a> is een, van origine Engels, vrijwilligersproject 
+  om een vrije wereldkaart op te bouwen.
+accessibility: |
+  Accessibility is het Engelse woord voor toegankelijkheid. Vaak wordt het ook ingekort als a11y (a-elf-y).
