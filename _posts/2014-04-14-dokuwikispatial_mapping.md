@@ -74,6 +74,6 @@ and provide a fall-back mechanism should the browser not (properly) support java
 
 Stay tuned for other posts in this series on:
 
-  - geotagging
+  - [geotagging]({% post_url 2014-07-16-dokuwikispatial_geotag %})
   - spatial indexing and searching
 
