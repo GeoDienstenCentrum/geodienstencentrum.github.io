@@ -88,9 +88,9 @@ current page or using a map as a browsing interface for exploration of yout wiki
 
 Read more posts in this series on:
 
-  - [geotagging]({% post_url 2014-04-14-dokuwikispatial_mapping %})
+  - [mapping]({% post_url 2014-04-14-dokuwikispatial_mapping %})
   - spatial indexing and searching
 
 
 
-[Talk about this on twitter]().
+[Talk about this on twitter](https://twitter.com/GeoDiensten/status/489358340515176448).
