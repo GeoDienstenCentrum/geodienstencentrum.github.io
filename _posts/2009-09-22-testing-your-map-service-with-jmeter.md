@@ -15,7 +15,7 @@ image: 2009-09-22-responseresult.jpg
 testing functional behaviour and performance of applications over the network. It is however not 
 the most accessible or easy to use tool, mostly because of the overwhelming amount of options. Once 
 started though there is no stopping! We use JMeter primarily to load test our GIS web applications 
-(eg. [eBRP](http://epractice.eu/cases/eBRPeGDI ="eBRP summary")) so that we can see if these scale 
+(eg. [eBRP](http://epractice.eu/cases/eBRPeGDI "eBRP summary")) so that we can see if these scale 
 to the sometimes huge amount of concurrent users, in these scenarios we test a web application as 
 a whole, however as we move into a more service oriented architecture we feel a need to test at 
 a smaller scale, ie. the service level. Since many of our map services are exposed with a REST 
