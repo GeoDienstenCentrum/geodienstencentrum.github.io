@@ -7,3 +7,4 @@ User-agent: *
 {% endif %}
 Sitemap: {{ site.url }}/sitemap.xml
 Crawl-delay: 10
+Host: www.geodienstencentrum.nl
