@@ -54,11 +54,11 @@ and the initial location of the map is added to the page metadata so it can be u
   <figcaption>An example of the slippy map showing a popup with a photograph of the Gumpen waterfall in the Loisach. The wiki markup for this is listed below</figcaption>
 </figure>
 
-```
+``` html
 <olmap id="olmap" width="660px" height="400px" lat="47.48" lon="10.98" 
    zoom="13" statusbar="1" baselyr="landscape">
 47.446383,10.918047,0,.8,stuw.png,Gumpen waterval \\ 
- { {http://www.hooidonksekanoclub.nl/fotoalbum/2009-05-hemelvaart/slides/IMG_7114.jpg?150|Gumpen waterval gezien van stroomaf}}
+ {% raw %}{{http://www.hooidonksekanoclub.nl/fotoalbum/2009-05-hemelvaart/slides/IMG_7114.jpg?150|Gumpen waterval gezien van stroomaf"}}{% endraw %}
 47.452819,10.923728,0,.8,uitstap.png,uitstap bovenloop Loisach
 47.482083,10.989167,0,.8,instap.png,Instap Gschwandsteg
 47.48146,11.04633,0,.8,uitstap.png, Uitstap "Zielhaus Grainau"
@@ -77,3 +77,4 @@ Stay tuned for other posts in this series on:
   - [geotagging]({% post_url 2014-07-16-dokuwikispatial_geotag %})
   - spatial indexing and searching
 
+[Talk about this on twitter](https://twitter.com/GeoDiensten/status/455822576007528448).
