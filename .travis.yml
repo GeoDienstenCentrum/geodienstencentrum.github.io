@@ -2,7 +2,7 @@ language: ruby
 
 cache: bundler
 
-gemfile: TravisGemfile
+gemfile: travisGemfile
 
 rvm:
   - 2.1
