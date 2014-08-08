@@ -7,6 +7,8 @@ gemfile: TravisGemfile
 rvm:
   - 2.1
 
+install: bundler install
+
 script: jekyll build && htmlproof ./_site && scss-lint ./_sass/
 
 env:
