@@ -34,7 +34,7 @@ In a quick overview we have three open standards based webservices;
 
   - A tile service for the base map, only used in the rich client,
   - an OpenLS service for the Gazetteer/Geocoding that will probably run on the 
-        [Adres Coordinaten Nederland](http://www.kadaster.nl/index_frames.html?inhoud=/zakelijk/producten/adrescoordinaten-nederland-en-geocoderen.html&amp;navig=/zakelijk/nav_serverside.html%3Fscript%3D1) database
+        [Adres Coordinaten Nederland](http://www.kadaster.nl/web/artikel/productartikel/Adrescoordinaten-Nederland.htm) database
   - and a WFS service that has geocoded metadata about the publications; this includes 
         address data and a hyperlink to the publication.
 

@@ -10,7 +10,7 @@ gemfile: travisGemfile
 
 install: bundle install
 
-script: jekyll build && scss-lint ./_sass/ && htmlproof ./_site
+script: jekyll build && htmlproof ./_site --href_ignore www.geonovum.nl,eur-lex.europa.eu --favicon --verbose && scss-lint ./_sass/
 
 env:
   global:

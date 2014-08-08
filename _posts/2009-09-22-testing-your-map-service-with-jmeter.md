@@ -11,7 +11,7 @@ description: Using Apache JMeter and some random address data we can run perform
 image: 2009-09-22-responseresult.jpg
 ---
 
-[Apache JMeter](http://jakarta.apache.org/jmeter/ "JMeter website") is a powerful tool for load 
+[Apache JMeter](http://jmeter.apache.org/ "JMeter website") is a powerful tool for load 
 testing functional behaviour and performance of applications over the network. It is however not 
 the most accessible or easy to use tool, mostly because of the overwhelming amount of options. Once 
 started though there is no stopping! We use JMeter primarily to load test our GIS web applications 
@@ -32,7 +32,7 @@ is then (in this case) parametrized so we can look at random locations on the ma
 operations at random locations., to initially go to a random location we have a list of 100 address 
 locations (zip;number;x coordinate;y coordinate) in a .csv file that have been randomly drawn from 
 our address database. Then we put in some elements called 
-[BSF PreProcessors](http://jakarta.apache.org/jmeter/usermanual/component_reference.html#BSF_PreProcessor "BSF PreProcessor docs") 
+[BSF PreProcessors](http://jmeter.apache.org/usermanual/component_reference.html#BSF_PreProcessor "BSF PreProcessor docs") 
 that will do some simple calculus in JavaScript to determine bounding boxes and such as shown below.
 
 ```javascript
@@ -64,20 +64,20 @@ Next up is adding some expectations that we want to be fulfilled, eg. we want to
 a HTTP status code of 200 (which means OK), we want image request to have the proper mime type 
 (ie. a png8 image should be returned with ContentType: image/png and we are expecting certain 
 response times). These are set up by adding 
-[Response Assertions](http://jakarta.apache.org/jmeter/usermanual/component_reference.html#Response_Assertion "Response Assertion docs") 
+[Response Assertions](http://jmeter.apache.org/usermanual/component_reference.html#Response_Assertion "Response Assertion docs") 
 to our JMeter script.
 
 Now we can add some advanced options such as 
-[Logic Controllers](http://jakarta.apache.org/jmeter/usermanual/component_reference.html#logic_controllers "Logic Controllers docs") 
-and [Timers](http://jakarta.apache.org/jmeter/usermanual/component_reference.html#timers "Timers docs") 
+[Logic Controllers](http://jmeter.apache.org/usermanual/component_reference.html#logic_controllers "Logic Controllers docs") 
+and [Timers](http://jmeter.apache.org/usermanual/component_reference.html#timers "Timers docs") 
 to further randomize the load and number of sessions to our service. And finally we want to have our 
 results so we add in some 
-[Listeners](http://jakarta.apache.org/jmeter/usermanual/component_reference.html#listeners "Listeners docs") 
+[Listeners](http://jmeter.apache.org/usermanual/component_reference.html#listeners "Listeners docs") 
 such as graphs and tables. These Listeners can also be used to export the test results to an XML 
 or CSV formatted file or an image.
 
 ## Get going
-So get started, [download JMeter](http://jakarta.apache.org/site/downloads/downloads_jmeter.cgi "JMeter download location")
+So get started, [download JMeter](https://jmeter.apache.org/download_jmeter.cgi "JMeter download location")
 and load the script (.jmx) attached to this post. Get a list of point data in a csv file 
 (the attached .csv is in Rijksdriehoek / EPSG:28992 which may or may not be useful to you), 
 when you use your own you may need to tweak the format in the "CSV Data Set Config - adressen", 
@@ -88,14 +88,14 @@ You need to specify/adapt the parameters in the test plan (`users`, `iteraties`,
 `gisPort`, `wkid`, `fullExtent` and `zoomExtent`) to suit your mapservice. To start off choose a small 
 number for both `users` and `iteraties` such as 1. You should now be ready to go...
 
-Download [JMeter script .zip](/img/2009-09-22-jmeter_script.zip").
+Download [JMeter script .zip](/img/2009-09-22-jmeter_script.zip).
 
 
 ## Interpret Results
 JMeter really doesn't know what you're using it for, so interpreting results is sometime a challenge 
 in itself. There are some Timeout parameters (assertions) that you can adjust to specify minimum 
 thresholds for response times and there's a large number of 
-[Listeners](http://jakarta.apache.org/jmeter/usermanual/component_reference.html#listeners "Listeners docs" )
+[Listeners](http://jmeter.apache.org/usermanual/component_reference.html#listeners "Listeners docs" )
 that will help you visualize the results or export them to something like CSV which you can then 
 use in you favourite spreadsheet or reporting tool.
 
