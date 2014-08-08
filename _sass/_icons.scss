@@ -1,22 +1,22 @@
-@include font-face("icomoon", 
+@include font-face('icomoon', 
                    font-files(
-                      "icomoon.woff", "icomoon.ttf", "icomoon.svg"
+                      'icomoon.woff', 'icomoon.ttf', 'icomoon.svg'
                    ),
-                   "icomoon.eot",
-                   "normal",
-                   "normal"
+                   'icomoon.eot',
+                   'normal',
+                   'normal'
                    );
 
 [data-icon]::before {
   font-family: icomoon;
   content: attr(data-icon);
-  //met extra spatie: content: attr(data-icon)"\0000a0";
+  //met extra spatie: content: attr(data-icon)'\0000a0';
   speak: none;
 }
 
 
 time::before {
   font-family: icomoon;
-  content: "\e60f\0000a0";
+  content: '\e60f\0000a0';
   font-size: initial;
 }

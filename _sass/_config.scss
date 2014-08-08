@@ -1,48 +1,49 @@
-/**
- * global configuration.
- */
+//////////////////////////
+// global configuration.
+//////////////////////////
 
-/* global overrides */
+// global overrides /////////////
 
 
-/* global imports */
-@import "compass/css3";
-@import "compass/utilities";
-@import "compass/typography";
+// global imports /////////////
+@import 'compass/css3';
+@import 'compass/utilities';
+@import 'compass/typography';
 
-@import "mixin/breakpoints";
+@import 'mixin/breakpoints';
 
-/* voor ouwe ie */
+// voor ouwe ie
 $useMediaQueries:    true;
 
-/* text colours */
+// text colours /////////////
 
-/* donkerblauw */
+// donkerblauw
 $text_col:           #200771;
-/* paars blauw */
-$_footer_col:        #3A16AD;
-/* turqoise */
+// paars blauw
+$_footer_col:        #3a16ad;
+// turqoise
 $_footer_anchor_col: #016262;
-/* licht turqoise */
+// wit
+$_sitenavcol:        #fff;
+// licht turqoise
 $_footer_anchor_col_active: #029797;
-/* wit */
-$_sitenavcol:        #FFF;
 
-/* background colours */
+// background colours /////////////
 
-/* oranje */
-$_bodybgcol:         #FCA903;
-/* licht oranje */
+// oranje
+$_bodybgcol:         #fca903;
+// licht oranje
 $_blockquotebgcol:   lighten($_bodybgcol,30%);
-/* off-wit */
-$_sitebgcol:         #F8F4EC;
-/* paarsblauw */
-$_sitenavbgcol:      #3A16AD;
+// off-wit
+$_sitebgcol:         #f8f4ec;
+// paarsblauw
+$_sitenavbgcol:      #3a16ad;
 
-/* afmetingen */
+
+// afmetingen /////////////
 
 // 40em~640px bij 16px base pixel
 $_siteWidth:         42em;
 
-
+// fonts /////////////
 $font:              Verdana, Helvetica Neue, Helvetica, Arial, sans-serif;

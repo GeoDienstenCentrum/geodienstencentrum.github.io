@@ -1,4 +1,6 @@
-@charset 'UTF-8';
+////////////////
+// old IE styles
+////////////////
 
 @import 'compass/support';
 
@@ -6,19 +8,20 @@
 @import 'utils';
 
 // overrides
-$useMediaQueries:                false;
-$legacy-support-for-ie:          true;
+$useMediaQueries:       false;
+$legacy-support-for-ie: true;
 
 @mixin border-radius($param) {
-    // override + ignore
+  // override + ignore
 }
+
 @mixin box-shadow() {
-    // override + ignore
+  // override + ignore
 }
 
 .visually-hidden {
-    // extra voor IE6, IE7
-    clip: rect(1px 1px 1px 1px);
+  // extra voor IE6, IE7
+  clip: rect(1px 1px 1px 1px);
 }
 
 @import 'sitenav';

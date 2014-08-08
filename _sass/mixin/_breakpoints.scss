@@ -1,6 +1,6 @@
-/**
- * screen breakpoint calculus; outputs media queries.
- */
+/////////////////////////////////////////////////////
+// screen breakpoint calculus; outputs media queries.
+/////////////////////////////////////////////////////
 @mixin breakpoint($breakpoint) {
   @if ($useMediaQueries) {
     // magic numbers

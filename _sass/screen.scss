@@ -1,6 +1,7 @@
-@charset 'UTF-8';
+//////////////////////////
+// screen/projector styles
+//////////////////////////
 
-/** screen/projector styles */
 @import 'config';
 @import 'utils';
 @import 'icons';
@@ -17,6 +18,7 @@ body {
   @include border-radius(0.3em);
   @include box-shadow;
   background-color: $_sitebgcol;
+
   @include breakpoint(regular) {
     border-left: $_footer_col solid 0.3em;
   }
@@ -24,6 +26,7 @@ body {
   @include breakpoint(wide) {
     // border-left: $_footer_col solid 0.3em;
   }
+  
   padding: 0.3em;
 
   @include breakpoint(narrow) {
@@ -62,7 +65,7 @@ a.skipLink {
   }
 }
 
-/* only display the widget on a big screen.*/
+// only display the widget on a big screen.
 .twitter-widget {
   @include breakpoint(narrow) {
     display: none;

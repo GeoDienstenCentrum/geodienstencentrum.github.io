@@ -1,6 +1,9 @@
-/* common */
+/////////////
+// common
+/////////////
+
 html {
-  
+  // empty
 }
 
 body {
@@ -43,7 +46,10 @@ figure > img {
   max-width: 100%;
 }
 
-/* site */
+/////////////
+// site
+/////////////
+
 .site {
   text-align: left;
   max-width: $_siteWidth;
@@ -71,23 +77,28 @@ figure > img {
 blockquote {
   padding: 1.5% 0.5em;
   margin: 0 2% 0.5em;
-  quotes: "\2018" "\2019" "\201c" "\201d";
+  quotes: '\2018' '\2019' '\201c' '\201d';
   @include box-shadow(0.1em 0.1em 0.5em);
   @include border-radius(0.3em);
   background: $_blockquotebgcol;
   
-  & p::before{
-    content: "\201c";
+  p::before {
+    content: '\201c';
   }
-  & p::after{
-    content: "\201d";
+
+  p::after {
+    content: '\201d';
   }
 }
 
-dl {}
+dl {
+  // empty
+}
 
 dt {
   font-weight: bold;
 }
 
-dd {}
+dd {
+  // empty
+}
