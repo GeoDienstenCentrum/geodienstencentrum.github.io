@@ -21,6 +21,7 @@ exclude:
   - .notes
   - Gemfile.lock
   - Gemfile
+  - vendor
 include:        [_pages]
 
 production:     true

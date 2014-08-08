@@ -1,0 +1,5 @@
+exclude: './_sass/_syntax.scss'
+
+linters:
+  LeadingZero:
+    enabled: false
