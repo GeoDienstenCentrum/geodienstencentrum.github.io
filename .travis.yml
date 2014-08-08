@@ -8,10 +8,28 @@ cache:
 
 gemfile: travisGemfile
 
-install: bundle install
+install: 
+  - bundle install
+  # - npm install htmlhint csslint jshint
 
-script: jekyll build && htmlproof ./_site --href_ignore www.geonovum.nl,eur-lex.europa.eu --favicon --verbose && scss-lint ./_sass/
+script: bundle exec jekyll build 
+
+after_script:
+  - bundle exec htmlproof $HTML_FOLDER --href_ignore www.geonovum.nl,eur-lex.europa.eu --favicon --verbose
+  # - htmlhint $HTML_FOLDER
+  # - bundle exec sass --check $SASS_FOLDER/*.scss
+  - bundle exec scss-lint $SASS_FOLDER
+  # - csslint $CSS_FILES --exclude-list=$CSS_EXCLUDES
+  # - jshint $JS_FOLDER
 
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+    - HTML_FOLDER="./_site/"
+    - SASS_FOLDER="./_sass/"
+    - CSS_FILES="css/main.css,css/old-ie.css,css/print.css,css/screen.css"
+    - CSS_EXCLUDES=""
+    - JS_FOLDER="./js/"
+
+notifications:
+  - email: false
