@@ -1,8 +1,9 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
-/** shared styling */
-@import "config";
-@import "syntax";
-@import "common";
-@import "utils";
-@import "posts";
+// shared styling
+
+@import 'config';
+@import 'syntax';
+@import 'common';
+@import 'utils';
+@import 'posts';

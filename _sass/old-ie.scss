@@ -1,23 +1,23 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
-@import "compass/support";
+@import 'compass/support';
 
-@import "config";
-@import "utils";
+@import 'config';
+@import 'utils';
 
-/* overrides */
+// overrides
 $useMediaQueries:                false;
 $legacy-support-for-ie:          true;
 
-@mixin border-radius($param){
+@mixin border-radius($param) {
     // override + ignore
 }
-@mixin box-shadow(){
+@mixin box-shadow() {
     // override + ignore
 }
 
 .visually-hidden {
-    /* extra voor IE6, IE7 */
+    // extra voor IE6, IE7
     clip: rect(1px 1px 1px 1px);
 }
 

@@ -1,23 +1,22 @@
-/* tag opmaak*/
+// tag opmaak
 
 .tagcloud {
-    @include inline-list;
-    @include tag-cloud(1.2em);
+  @include inline-list;
+  @include tag-cloud(1.2em);
 }
 
 .tags {
-    overflow: hidden;
-    font-size: smaller;
+  overflow: hidden;
+  font-size: smaller;
 }
 
 .taglist {
-    float: right;
-    @include inline-block-list;
+  float: right;
+  @include inline-block-list;
 }
 
 .tag {
-    float: left;
-    margin-right: 0.5em;
-    margin-left: 0.5em !important;
-    //margin: 0.5em !important;
+  float: left;
+  margin-right: 0.5em;
+  margin-left: 0.5em !important;
 }

@@ -1,12 +1,12 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 /** screen/projector styles */
-@import "config";
-@import "utils";
-@import "icons";
-@import "footer";
-@import "tagcloud";
-@import "sitenav";
+@import 'config';
+@import 'utils';
+@import 'icons';
+@import 'footer';
+@import 'tagcloud';
+@import 'sitenav';
 
 body { 
   background-color: $_bodybgcol;
@@ -20,17 +20,18 @@ body {
   @include breakpoint(regular) {
     border-left: $_footer_col solid 0.3em;
   }
+
   @include breakpoint(wide) {
     // border-left: $_footer_col solid 0.3em;
   }
   padding: 0.3em;
 
   @include breakpoint(narrow) {
-     max-width: 98%;
+    max-width: 98%;
 
-     & h1 {
-       font-size: 1.5em;
-     }
+    h1 {
+      font-size: 1.5em;
+    }
   }
 }
 
@@ -42,7 +43,7 @@ body {
   padding: 0.3em;
 }
 
-a.skipLink{
+a.skipLink {
   background-color: $_sitebgcol;
   border: 2px solid $_bodybgcol;
   display: block;
@@ -62,13 +63,15 @@ a.skipLink{
 }
 
 /* only display the widget on a big screen.*/
-.twitter-widget{
+.twitter-widget {
   @include breakpoint(narrow) {
     display: none;
   }
+
   @include breakpoint(regular) {
     display: none;
   }
+
   @include breakpoint(wide) {
     width: 15em;
     top: 12em;

@@ -1,9 +1,10 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
-/** print styles */
-@import "config";
+// print styles
 
-/* niet afdrukken */
+@import 'config';
+
+// niet afdrukken
 .rss,
 #skiplinks,
 #siteNav,
