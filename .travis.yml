@@ -1,15 +1,16 @@
 language: ruby
 
-cache: bundler
-
-gemfile: travisGemfile
-
 rvm:
   - 2.1
 
+cache: 
+  - bundler
+
+gemfile: travisGemfile
+
 install: bundle install
 
-script: jekyll build && htmlproof ./_site && scss-lint ./_sass/
+script: jekyll build && scss-lint ./_sass/ && htmlproof ./_site
 
 env:
   global:
