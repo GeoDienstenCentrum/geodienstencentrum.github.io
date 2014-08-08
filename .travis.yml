@@ -32,4 +32,4 @@ env:
     - JS_FOLDER="./js/"
 
 notifications:
-  - email: false
+  email: false
