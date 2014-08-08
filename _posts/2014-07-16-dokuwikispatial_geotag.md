@@ -57,7 +57,6 @@ and [Google](https://support.google.com/webmasters/answer/1211158).
 
 ```html
 ...
-
 <span class="geotagPrint">Geotag (locatie) voor: </span>
 <div class="geo" title="Geotag (locatie) voor VERBUND-Wasserarena" 
     itemscope itemtype="http://schema.org/Place">
@@ -69,7 +68,6 @@ and [Google](https://support.google.com/webmasters/answer/1211158).
   <span class="longitude" itemprop="longitude" content="16.46085">16º27'39.06"E</span>
   <span class="a11y">Zoek in de buurt van VERBUND-Wasserarena</span></a></span>
 </div>
-
 ...
 ```
 

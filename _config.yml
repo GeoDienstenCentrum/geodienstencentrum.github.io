@@ -8,8 +8,9 @@ lsi: false
 
 gems:
   - jekyll-sitemap
+# markdown:       kramdown
 markdown:       redcarpet
-pygments:       true
+highlighter:    pygments
 source:         .
 destination:    ./_site
 plugins:        ./_plugins
