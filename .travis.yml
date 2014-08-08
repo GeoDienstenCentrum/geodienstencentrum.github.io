@@ -24,7 +24,7 @@ after_script:
 
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
     - HTML_FOLDER="./_site/"
     - SASS_FOLDER="./_sass/"
     - CSS_FILES="css/main.css,css/old-ie.css,css/print.css,css/screen.css"
