@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'sass', '3.3.14'
 gem 'compass'
 gem 'github-pages'
 gem 'scss-lint'
