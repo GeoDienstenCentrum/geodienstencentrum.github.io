@@ -18,26 +18,26 @@ $useMediaQueries:    true;
 // text colours /////////////
 
 // donkerblauw
-$text_col:           #200771;
+$text-col:           #200771;
 // paars blauw
-$_footer_col:        #3a16ad;
+$footer-text-col:        #3a16ad;
 // turqoise
-$_footer_anchor_col: #016262;
+$footer-anchor-text-col: #016262;
 // wit
-$_sitenavcol:        #fff;
+$sitenav-text-col:        #fff;
 // licht turqoise
-$_footer_anchor_col_active: #029797;
+$footer-anchor-text-col-active: #029797;
 
 // background colours /////////////
 
 // oranje
-$_bodybgcol:         #fca903;
+$body-bg-col:         #fca903;
 // licht oranje
-$_blockquotebgcol:   lighten($_bodybgcol, 30%);
+$blockquote-bg-col:   lighten($body-bg-col, 30%);
 // off-wit
-$_sitebgcol:         #f8f4ec;
+$site-bg-col:         #f8f4ec;
 // paarsblauw
-$_sitenavbgcol:      #3a16ad;
+$sitenav-bg-col:      #3a16ad;
 
 
 // afmetingen /////////////

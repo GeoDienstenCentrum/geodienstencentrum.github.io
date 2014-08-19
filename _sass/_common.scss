@@ -20,10 +20,10 @@ p {
 }
 
 a {
-  @include link-colors($_footer_col,
-                       $_footer_anchor_col,
-                       $_footer_anchor_col_active,
-                       $_footer_anchor_col);
+  @include link-colors($footer-text-col,
+                       $footer-anchor-text-col,
+                       $footer-anchor-text-col-active,
+                       $footer-anchor-text-col);
   transition: color 0.25s linear;  
 
   &:hover,
@@ -84,7 +84,7 @@ blockquote {
   quotes: '\2018' '\2019' '\201c' '\201d';
   @include box-shadow(0.1em 0.1em 0.5em);
   @include border-radius(0.3em);
-  background: $_blockquotebgcol;
+  background: $blockquote-bg-col;
   
   p::before {
     content: '\201c';

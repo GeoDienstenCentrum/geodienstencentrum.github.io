@@ -1,6 +1,6 @@
 .siteFooter {
-  color: $_footer_col;
-  border-top: 4px solid $_bodybgcol;
+  color: $footer-text-col;
+  border-top: 4px solid $body-bg-col;
   margin-top: 2em;
   overflow: hidden;
   font-size: smaller;
@@ -12,11 +12,11 @@
   }
   
   a {
-    @include link-colors($_footer_col,
-                         $_footer_anchor_col,
-                         $_footer_anchor_col_active,
-                         $_footer_anchor_col,
-                         $_footer_anchor_col);
+    @include link-colors($footer-text-col,
+                         $footer-anchor-text-col,
+                         $footer-anchor-text-col-active,
+                         $footer-anchor-text-col,
+                         $footer-anchor-text-col);
   }
 }
 

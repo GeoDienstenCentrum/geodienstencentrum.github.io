@@ -20,15 +20,15 @@
   @include box-shadow;
 
   line-height: 1.4em;
-  background-color: $_sitenavbgcol;
-  color: $_sitebgcol;
+  background-color: $sitenav-bg-col;
+  color: $site-bg-col;
 
   a {
     text-decoration: none;
-    @include link-colors($_sitenavcol, 
-                         $_sitenavcol,
-                         $_sitenavcol,
-                         $_sitenavcol);
+    @include link-colors($sitenav-text-col, 
+                         $sitenav-text-col,
+                         $sitenav-text-col,
+                         $sitenav-text-col);
     white-space: nowrap;
   }
 

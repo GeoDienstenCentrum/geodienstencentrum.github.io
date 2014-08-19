@@ -10,21 +10,21 @@
 @import 'sitenav';
 
 body { 
-  background-color: $_bodybgcol;
-  color: $text_col;
+  background-color: $body-bg-col;
+  color: $text-col;
 }
 
 .site {
   @include border-radius(0.3em);
   @include box-shadow;
-  background-color: $_sitebgcol;
+  background-color: $site-bg-col;
 
   @include breakpoint(regular) {
-    border-left: $_footer_col solid 0.3em;
+    border-left: $footer-text-col solid 0.3em;
   }
 
   @include breakpoint(wide) {
-    // border-left: $_footer_col solid 0.3em;
+    // border-left: $footer-text-col solid 0.3em;
   }
   
   padding: 0.3em;
@@ -39,16 +39,16 @@ body {
 }
 
 .summary {
-  // background-color: $_sitenavcol;
-  // color: $_sitenavbgcol;
+  // background-color: $sitenav-text-col;
+  // color: $sitenav-bg-col;
   @include border-radius(0.3em);
   @include box-shadow;
   padding: 0.3em;
 }
 
 a.skipLink {
-  background-color: $_sitebgcol;
-  border: 2px solid $_bodybgcol;
+  background-color: $site-bg-col;
+  border: 2px solid $body-bg-col;
   display: block;
   left: -1000em;
   padding: 0.3em;
@@ -60,7 +60,7 @@ a.skipLink {
     top: 1em;
     left: 1em;
     z-index: 1000;
-    color: $_footer_col;
+    color: $footer-text-col;
     border: initial;
   }
 }
