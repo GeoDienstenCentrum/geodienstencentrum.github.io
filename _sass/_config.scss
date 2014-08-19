@@ -13,7 +13,7 @@
 @import 'mixin/breakpoints';
 
 // voor ouwe ie
-$useMediaQueries:    true;
+$use-media-queries:    true;
 
 // text colours /////////////
 
@@ -43,7 +43,7 @@ $sitenav-bg-col:      #3a16ad;
 // afmetingen /////////////
 
 // 40em~640px bij 16px base pixel
-$_siteWidth:         42em;
+$site-width:         42em;
 
 // fonts /////////////
 $font:              Verdana, Helvetica Neue, Helvetica, Arial, sans-serif;

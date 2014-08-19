@@ -1,4 +1,4 @@
-.siteNav {
+.site-nav {
   position: fixed;
   top: 3em;
   right: 1%;
@@ -11,7 +11,7 @@
   }
 
   @include breakpoint(wide) {
-    left: calc(50% + #{($_siteWidth / 2 + 5em)});
+    left: calc(50% + #{($site-width / 2 + 5em)});
     right: initial;
   }
 
