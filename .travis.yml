@@ -15,11 +15,10 @@ install:
 script: 
   - jekyll build
   - scss-lint $SASS_FOLDER
+  - htmlproof $HTML_FOLDER --favicon --verbose
 
 after_script:
-  - htmlproof $HTML_FOLDER --favicon --verbose
   # - htmlhint $HTML_FOLDER
-  # - bundle exec scss-lint $SASS_FOLDER
   # - jshint $JS_FOLDER
 
 env:
