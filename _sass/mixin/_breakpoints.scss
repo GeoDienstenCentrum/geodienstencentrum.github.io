@@ -2,14 +2,14 @@
 // screen breakpoint calculus; outputs media queries.
 /////////////////////////////////////////////////////
 @mixin breakpoint($breakpoint) {
-  @if ($useMediaQueries) {
+  @if ($use-media-queries) {
     // magic numbers
-    $_offset: 6em; 
-    $_offset-max: $_offset + 24em;
+    $offset: 6em; 
+    $offset-max: $offset + 24em;
 
-    $narrow:  '(max-width: ' + ($_siteWidth - 0.063em + $_offset) + ')';
-    $regular: '(min-width: ' + ($_siteWidth + $_offset)          + ')';
-    $wide:    '(min-width: ' + ($_siteWidth + $_offset-max)       + ')';
+    $narrow:  '(max-width: ' + ($site-width - 0.063em + $offset) + ')';
+    $regular: '(min-width: ' + ($site-width + $offset)          + ')';
+    $wide:    '(min-width: ' + ($site-width + $offset-max)       + ')';
 
     @if ($breakpoint == narrow) {
       @media #{$narrow} { @content; }

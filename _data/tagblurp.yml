@@ -24,3 +24,9 @@ openstreetmap: |
   om een vrije wereldkaart op te bouwen.
 accessibility: |
   Accessibility is het Engelse woord voor toegankelijkheid. Vaak wordt het ook ingekort als a11y (a-elf-y).
+dokuwiki: |
+  <a href="https://www.dokuwiki.org/">DokuWiki</a> is een simpel te gebruiken en bijzonder veelzijdige 
+  Open Source wiki software die geen database nodig heeft. Ingebouwde toegangsrechten en authenticatie 
+  modules maken DokuWiki in het bijzonder bruikbaar in de context van bedrijven en het grote aantal 
+  plugins bijgedragen door haar levendige gemeenschap geven een brede range van gebruiksmogelijkheden 
+  naast de traditionele wiki.

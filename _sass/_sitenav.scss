@@ -1,8 +1,14 @@
-.siteNav {
+.site-nav {
   position: fixed;
   top: 3em;
   right: 1%;
-
+  overflow: hidden;
+  @include border-radius(0.3em);
+  @include box-shadow;
+  line-height: 1.4em;
+  background-color: $sitenav-bg-col;
+  color: $site-bg-col;
+  
   @include breakpoint(narrow) { 
     top: 0.2em;
   }
@@ -11,24 +17,16 @@
   }
 
   @include breakpoint(wide) {
-    left: calc(50% + #{($_siteWidth / 2 + 5em)});
+    left: calc(50% + #{($site-width / 2 + 5em)});
     right: initial;
   }
 
-  overflow: hidden;
-  @include border-radius(0.3em);
-  @include box-shadow;
-
-  line-height: 1.4em;
-  background-color: $_sitenavbgcol;
-  color: $_sitebgcol;
-
   a {
     text-decoration: none;
-    @include link-colors($_sitenavcol, 
-                         $_sitenavcol,
-                         $_sitenavcol,
-                         $_sitenavcol);
+    @include link-colors($sitenav-text-col, 
+                         $sitenav-text-col,
+                         $sitenav-text-col,
+                         $sitenav-text-col);
     white-space: nowrap;
   }
 

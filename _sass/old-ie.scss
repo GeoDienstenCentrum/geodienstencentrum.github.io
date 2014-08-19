@@ -8,7 +8,7 @@
 @import 'utils';
 
 // overrides
-$useMediaQueries:       false;
+$use-media-queries:       false;
 $legacy-support-for-ie: true;
 
 @mixin border-radius($param) {
