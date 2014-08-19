@@ -14,7 +14,7 @@ image: 2011-09-06-ehs-4h.png
 The [Inspire directive](http://inspire.jrc.ec.europa.eu/) has some fairly strict requirements 
 regarding performance and uptime of services (QOS) 
 (see: [32009R0976 Annex 1](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32009R0976:EN:NOT) 
-and the [amendment](http://eur-lex.europa.eu/Result.do?RechType=RECH_celex&amp;lang=en&amp;ihmlang=en&amp;code=32010R1088). 
+and the [amendment](http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32010R1088). 
 Monitoring these parameters can easily be done using a few Python scripts and RRDtool. This provides 
 an environment that is both lightweight and portable across platforms.
 

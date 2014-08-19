@@ -39,7 +39,7 @@ In a quick overview we have three open standards based webservices;
         address data and a hyperlink to the publication.
 
 The WFS service is specific for this application, the former two are part of the 
-[PDOK infrastucture](http://www.geonovum.nl/nieuws/pdok/update-van-stand-van-zaken-binnen-pdok). 
+<a href="http://www.geonovum.nl/nieuws/pdok/update-van-stand-van-zaken-binnen-pdok" data-proofer-ignore="true">PDOK infrastucture</a>.
 Because of some extra's that we need (like returning area's) we'll probably be building our own 
 Gazetteer using Hibernate Spatial and Lucene, more about this some other time.
 

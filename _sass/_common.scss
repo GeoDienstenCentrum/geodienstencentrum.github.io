@@ -33,6 +33,10 @@ a {
   }
 }
 
+a[data-proofer-ignore="true"] {
+  text-decoration: line-through;
+}
+
 abbr {
   border-bottom: 1px dotted;
   

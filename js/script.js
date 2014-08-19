@@ -1,0 +1,1 @@
+/* decorate broken links */ for (var i=0;i<document.querySelectorAll('[data-proofer-ignore="true"]').length;i++){document.querySelectorAll('[data-proofer-ignore="true"]')[i].insertAdjacentHTML("beforeend", "&nbsp;(broken)");}

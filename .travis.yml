@@ -15,7 +15,7 @@ install:
 script: bundle exec jekyll build 
 
 after_script:
-  - bundle exec htmlproof $HTML_FOLDER --href_ignore www.geonovum.nl,eur-lex.europa.eu --favicon --verbose
+  - bundle exec htmlproof $HTML_FOLDER --favicon --verbose
   # - htmlhint $HTML_FOLDER
   # - bundle exec sass --check $SASS_FOLDER/*.scss
   - bundle exec scss-lint $SASS_FOLDER
