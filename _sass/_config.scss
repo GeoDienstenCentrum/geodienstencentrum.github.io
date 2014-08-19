@@ -12,38 +12,35 @@
 
 @import 'mixin/breakpoints';
 
-// voor ouwe ie
-$use-media-queries:    true;
+// voor old ie
+$use-media-queries:      true;
 
 // text colours /////////////
-
 // donkerblauw
-$text-col:           #200771;
+$text-col:               #200771;
 // paars blauw
 $footer-text-col:        #3a16ad;
 // turqoise
 $footer-anchor-text-col: #016262;
 // wit
-$sitenav-text-col:        #fff;
+$sitenav-text-col:       #fff;
 // licht turqoise
 $footer-anchor-text-col-active: #029797;
 
 // background colours /////////////
-
 // oranje
-$body-bg-col:         #fca903;
+$body-bg-col:            #fca903;
 // licht oranje
-$blockquote-bg-col:   lighten($body-bg-col, 30%);
+$blockquote-bg-col:      lighten($body-bg-col, 30%);
 // off-wit
-$site-bg-col:         #f8f4ec;
+$site-bg-col:            #f8f4ec;
 // paarsblauw
-$sitenav-bg-col:      #3a16ad;
+$sitenav-bg-col:         #3a16ad;
 
 
-// afmetingen /////////////
-
+// dimensions /////////////
 // 40em~640px bij 16px base pixel
-$site-width:         42em;
+$site-width:             42em;
 
 // fonts /////////////
-$font:              Verdana, Helvetica Neue, Helvetica, Arial, sans-serif;
+$font:                   Verdana, Helvetica Neue, Helvetica, Arial, sans-serif;

@@ -28,7 +28,6 @@ a {
 
   &:hover,
   &:focus {
-    //outline: 0.1em solid;
     @include box-shadow(0.2em 0.2em 1em);
   }
 }

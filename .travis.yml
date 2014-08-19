@@ -10,18 +10,16 @@ gemfile: travisGemfile
 
 install: 
   - bundle install
-  # - npm install htmlhint csslint jshint
+  # - npm install htmlhint jshint
 
 script: 
-  - bundle exec jekyll build
-  - bundle exec scss-lint $SASS_FOLDER
+  - jekyll build
+  - scss-lint $SASS_FOLDER
 
 after_script:
-  - bundle exec htmlproof $HTML_FOLDER --favicon --verbose
+  - htmlproof $HTML_FOLDER --favicon --verbose
   # - htmlhint $HTML_FOLDER
-  # - bundle exec sass --check $SASS_FOLDER/*.scss
   # - bundle exec scss-lint $SASS_FOLDER
-  # - csslint $CSS_FILES --exclude-list=$CSS_EXCLUDES
   # - jshint $JS_FOLDER
 
 env:
@@ -29,8 +27,6 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
     - HTML_FOLDER="./_site/"
     - SASS_FOLDER="./_sass/"
-    - CSS_FILES="css/main.css,css/old-ie.css,css/print.css,css/screen.css"
-    - CSS_EXCLUDES=""
     - JS_FOLDER="./js/"
 
 notifications:
