@@ -1,13 +1,13 @@
 // 'onzichtbare' tekst/inhoud/context
 .visually-hidden { 
   position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
   width: 1px !important;
-  overflow: hidden;
+  height: 1px !important;
+  padding: 0 !important;
   margin: -1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0 !important;
 }
 
 .hidden {
