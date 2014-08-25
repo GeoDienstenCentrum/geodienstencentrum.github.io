@@ -10,13 +10,14 @@
 @import 'sitenav';
 
 body { 
-  background-color: $body-bg-col;
   color: $text-col;
+  background-color: $body-bg-col;
 }
 
 .site {
   @include border-radius(0.3em);
   @include box-shadow;
+  padding: 0.3em;
   background-color: $site-bg-col;
 
   @include breakpoint(regular) {
@@ -26,8 +27,6 @@ body {
   @include breakpoint(wide) {
     // border-left: $footer-text-col solid 0.3em;
   }
-  
-  padding: 0.3em;
 
   @include breakpoint(narrow) {
     max-width: 98%;
@@ -45,13 +44,13 @@ body {
 }
 
 a.skiplink {
+  position: absolute;
+  left: -1000em;
+  z-index: 10;
+  display: block;
+  padding: 0.3em;
   background-color: $site-bg-col;
   border: 2px solid $body-bg-col;
-  display: block;
-  left: -1000em;
-  padding: 0.3em;
-  position: absolute;
-  z-index: 10;
 
   &:focus,
   &:hover {
@@ -74,10 +73,10 @@ a.skiplink {
   }
 
   @include breakpoint(wide) {
-    width: 15em;
-    top: 12em;
     position: fixed;
+    top: 12em;
     right: 1.5em;
     display: initial;
+    width: 15em;
   }
 }
