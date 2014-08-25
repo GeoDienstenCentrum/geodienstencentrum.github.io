@@ -1,7 +1,7 @@
 // home page ///////////////
 .posts {
-  list-style-type: none;
   margin-bottom: 2em;
+  list-style-type: none;
   
   li {
     // line-height: 1.75em;
@@ -15,19 +15,19 @@
 // posts ///////////////
 .post pre {
   // standard
-  border: 1px solid #ddd;
-  background-color: #eef;
   padding: 0 .4em;
-  
+  background-color: #eef;
+  border: 1px solid #ddd;
+
   code {
     border: 0;
   }
 
   .terminal {
     // terminal
-    border: 1px solid #000;
-    background-color: #333;
     color: #fff;
+    background-color: #333;
+    border: 1px solid #000;
   }
 }
 
@@ -37,9 +37,9 @@
 }
 
 .post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
   padding: 0 .2em;
+  background-color: #eef;
+  border: 1px solid #ddd;
 }
 
 .meta,
