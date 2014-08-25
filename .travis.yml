@@ -13,9 +13,9 @@ install:
   # - npm install htmlhint jshint
 
 script: 
-  - jekyll build
-  - scss-lint $SASS_FOLDER
-  - htmlproof $HTML_FOLDER --favicon --verbose
+  - bundle exec jekyll build
+  - bundle exec scss-lint $SASS_FOLDER
+  - bundle exec htmlproof $HTML_FOLDER --favicon --verbose
 
 after_script:
   # - htmlhint $HTML_FOLDER
