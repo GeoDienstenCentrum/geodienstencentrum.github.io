@@ -1,13 +1,15 @@
 .site-footer {
-  color: $footer-text-col;
-  border-top: 4px solid $body-bg-col;
+  max-width: $site-width;
   margin-top: 2em;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
   overflow: hidden;
   font-size: smaller;
   line-height: 1.2em;
-  max-width: $site-width;
-  
+  color: $footer-text-col;
+  border-top: 4px solid $body-bg-col;
+
   .contact {
     float: left;
     margin-right: 1.1em;
