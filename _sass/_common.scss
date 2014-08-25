@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  text-align: center;
   font-family: $font;
+  text-align: center;
 }
 
 h1 { 
@@ -54,10 +54,10 @@ figure > img {
 /////////////
 
 .site {
-  text-align: left;
   max-width: $site-width;
   margin: 3em auto 2em;
   line-height: 1.5em;
+  text-align: left;
 }
 
 .title {
@@ -66,10 +66,10 @@ figure > img {
 }
 
 .subtitle {
-  font-style: italic;
   margin-top: -2em;
   margin-bottom: 2em;
   margin-left: 2em;
+  font-style: italic;
 }
 
 .summary {
@@ -80,10 +80,10 @@ figure > img {
 blockquote {
   padding: 1.5% 0.5em;
   margin: 0 2% 0.5em;
+  background: $blockquote-bg-col;
   quotes: '\2018' '\2019' '\201c' '\201d';
   @include box-shadow(0.1em 0.1em 0.5em);
   @include border-radius(0.3em);
-  background: $blockquote-bg-col;
   
   p::before {
     content: '\201c';
