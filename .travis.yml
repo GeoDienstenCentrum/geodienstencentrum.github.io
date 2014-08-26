@@ -10,6 +10,7 @@ gemfile: travisGemfile
 
 install: 
   - bundle install
+  - bundle exec scss-lint -v
   # - npm install htmlhint jshint
 
 script: 
