@@ -6,8 +6,8 @@
   @include border-radius(0.3em);
   @include box-shadow;
   line-height: 1.4em;
-  background-color: $sitenav-bg-col;
   color: $site-bg-col;
+  background-color: $sitenav-bg-col;
   
   @include breakpoint(narrow) { 
     top: 0.2em;
@@ -17,8 +17,8 @@
   }
 
   @include breakpoint(wide) {
-    left: calc(50% + #{($site-width / 2 + 5em)});
     right: initial;
+    left: calc(50% + #{($site-width / 2 + 5em)});
   }
 
   a {
@@ -37,10 +37,10 @@
     margin-bottom: 0;
 
     > li {
-      margin-left: 0.3em;
       margin-right: 0.3em;
-      // bij overlappen met .site
+      margin-left: 0.3em;
 
+      // bij overlappen met .site
       @include breakpoint(narrow) {
         display: inline;
       }
