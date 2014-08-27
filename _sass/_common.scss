@@ -61,7 +61,7 @@ figure > img {
 }
 
 .title {
-  display: inline-block;
+  @include inline-block;
   margin-bottom: 2em;
 }
 

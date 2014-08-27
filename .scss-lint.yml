@@ -1,6 +1,8 @@
 exclude: './_sass/_syntax.scss'
 
 linters:
+  Compass::*:
+    enabled: true
   LeadingZero:
     enabled: false
   # based on http://git.io/hpl2Gw (via https://gist.github.com/meleyal/c70626c7ef294c1bbd12)
