@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'sass'
 gem 'compass'
-gem 'github-pages'
-gem 'scss-lint', '>= 0.27.0'
+gem 'scss-lint'
 gem 'html-proofer'
+gem 'github-pages'
