@@ -69,4 +69,4 @@ eg. a complete map or a GeoRSS document are also possibilities.
 Some more examples are available on the [sample site](http://dokuwikispatial.sourceforge.net/dokuwiki/spatialhelper:start)
 and [wild-water.nl](http://wild-water.nl/dokuwiki/start?do=findnearby&geohash=u0urcr)
 
-<!-- [Talk about this on twitter](https://twitter.com/GeoDiensten/status/).-->
+[Talk about this on twitter](https://twitter.com/GeoDiensten/status/512158204290408448).
