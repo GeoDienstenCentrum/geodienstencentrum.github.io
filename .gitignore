@@ -22,3 +22,5 @@ _site
 
 /*.project
 /*.buildpath
+
+/travisGemfile.lock
