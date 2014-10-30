@@ -289,3 +289,4 @@ For some of the other javascript and Sass code you can look into the
 [openlayersmap](http://sourceforge.net/p/dokuwikispatial/code/HEAD/tree/trunk/openlayersmap/src/javascript/) 
 [DokuWiki plugin](https://www.dokuwiki.org/plugin:openlayersmap) source tree.
 
+[Talk about this on twitter](https://twitter.com/GeoDiensten/status/434063976347860992).
