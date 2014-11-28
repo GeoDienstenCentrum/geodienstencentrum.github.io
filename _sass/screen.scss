@@ -38,12 +38,13 @@ body {
 }
 
 .summary {
-  padding: 0.3em;
-  @include border-radius(0.3em);
   @include box-shadow;
+  @include border-radius(0.3em);
+
+  padding: 0.3em;
 }
 
-a.skiplink {
+.skiplink {
   position: absolute;
   left: -1000em;
   z-index: 10;

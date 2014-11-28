@@ -13,8 +13,9 @@
 }
 
 .taglist {
-  float: right;
   @include inline-block-list;
+  
+  float: right;
 }
 
 .tag {

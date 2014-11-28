@@ -78,13 +78,14 @@ figure > img {
 }
 
 blockquote {
+  @include box-shadow(0.1em 0.1em 0.5em);
+  @include border-radius(0.3em);
+
   padding: 1.5% 0.5em;
   margin: 0 2% 0.5em;
   background: $blockquote-bg-col;
   quotes: '\2018' '\2019' '\201c' '\201d';
-  @include box-shadow(0.1em 0.1em 0.5em);
-  @include border-radius(0.3em);
-  
+
   p::before {
     content: '\201c';
   }

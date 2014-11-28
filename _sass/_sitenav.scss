@@ -1,10 +1,11 @@
 .site-nav {
+  @include border-radius(0.3em);
+  @include box-shadow;
+
   position: fixed;
   top: 3em;
   right: 1%;
   overflow: hidden;
-  @include border-radius(0.3em);
-  @include box-shadow;
   line-height: 1.4em;
   color: $site-bg-col;
   background-color: $sitenav-bg-col;
@@ -22,17 +23,18 @@
   }
 
   a {
-    text-decoration: none;
     @include link-colors($sitenav-text-col, 
                          $sitenav-text-col,
                          $sitenav-text-col,
                          $sitenav-text-col);
+
+    text-decoration: none;
     white-space: nowrap;
   }
 
   > ul {
-    padding: 0;
     @include no-bullet;
+    padding: 0;
     margin-top: 0;
     margin-bottom: 0;
 
