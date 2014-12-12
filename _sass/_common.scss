@@ -32,9 +32,11 @@ a {
   }
 }
 
+// scss-lint:disable QualifyingElement
 a[data-proofer-ignore="true"] {
   text-decoration: line-through;
 }
+// scss-lint:enable  QualifyingElement
 
 abbr {
   border-bottom: 1px dotted;
