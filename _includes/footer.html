@@ -1,42 +1,9 @@
 <address id="siteFooter" class="site-footer h-card vcard" aria-label="contact informatie" 
     itemscope itemtype="http://schema.org/ProfessionalService">
   <div class="contact">
-    <p class="">
+    <p>
       <span itemprop="name" class="p-name fn org name">GeoDienstenCentrum</span>
       <br />
-      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="h-adr adr">
-        <span itemprop="streetAddress" class="p-street-address street-address">{{ site.adres.straat }}</span>
-        <br />
-        <span itemprop="postalCode" class="p-postal-code postal-code">{{ site.adres.postcode }}</span>
-        <span itemprop="addressLocality" class="p-locality locality">{{ site.adres.plaatsnaam }}</span>
-        <br />
-        <!--span itemprop="addressCountry" class="p-country-name country-name">{{ site.adres.land }}</span -->
-      </span>
-    </p>
-  </div>
-  <div class="contact">
-    <p>
-      <!-- span aria-hidden="true" data-icon="&#xe600;"></span>{{ site.author }}<br / -->
-      <a href="mailto:{{site.email}}" class="email">
-        <span aria-hidden="true" data-icon="&#xe615;"></span>
-        <span class="visually-hidden">email:</span>
-        <span itemprop="email">{{ site.email }}</span>
-      </a>
-      <!-- br />
-        <span aria-hidden="true" data-icon="&#xe60c;"></span>
-        <span class="visually-hidden">telefoon:</span>
-        <span itemprop="telephone" class="tel">{{ site.phone }}</span>
-      -->
-      <br />
-        <a href="https://www.openkvk.nl/{{ site.kvk }}" class="kvk">
-          <span aria-hidden="true" data-icon="&#xe616;"></span>
-          <span class="visually-hidden">KvK nummer:</span>
-          <span itemprop="kvk-nummer">KvK: {{ site.kvk }}</span>
-        </a>
-    </p>
-  </div>
-  <div class="contact">
-    <p>
       <a href="https://github.com/{{site.github-user}}" itemprop="url">
         <span aria-hidden="true" data-icon="&#xe607;"></span>
         <span class="visually-hidden">github:</span>

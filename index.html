@@ -1,29 +1,27 @@
 ---
 layout: default
-title: "Homepage GeoDienstenCentrum: Voor toegankelijke ruimtelijke informatie"
-description: GeoDienstenCentrum voorziet in advies over toegankelijke ruimtelijke 
-  informatie en informatica en kan ook de implementatie van dat advies verzorgen
+title: "GeoDienstenCentrum Blog"
+description: GeoDienstenCentrum blog over toegankelijke ruimtelijke informatie en informatica
 tags: 
   - webrichtlijnen
   - gis
   - toegankelijkheid
-  - informatie
   - geo
   - wcag2
 
 ---
 
-<p>Voor advies over en implementatie van toegankelijke ruimtelijke informatie met een 
-"privacy first" insteek, bij voorkeur op basis van open standaarden, open source software 
-en open data.<p>
-
-<p>Kijk voor meer informatie in het <a href="/over.html">overzicht</a> of blader door 
-de <a href="/blog.html">artikelen</a>.</p>
-
-<h2>Recente artikelen</h2>
+<div id="blog" itemscope itemtype="http://schema.org/Blog">
+<p itemprop="description">Een overzicht van de (voorlopig alleen engelstalige) artikelen op deze website.</p>
 
 <ul class="posts">
 {% for post in site.posts limit:3 %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  <li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+    <time class="meta" itemprop="dateCreated" datetime="{{post.date | date: '%Y-%m-%d'}}">{{ post.date | date_to_string }}</time> 
+    <a href="{{ post.url }}" itemprop="url name">{{ post.title }}</a>
+    {{ post.excerpt }}
+  </li>
 {% endfor %}
 </ul>
+
+</div>
