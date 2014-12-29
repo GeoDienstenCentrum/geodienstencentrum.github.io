@@ -19,9 +19,15 @@ tags:
   <li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
     <time class="meta" itemprop="dateCreated" datetime="{{post.date | date: '%Y-%m-%d'}}">{{ post.date | date_to_string }}</time> 
     <a href="{{ post.url }}" itemprop="url name">{{ post.title }}</a>
-    {{ post.excerpt }}
+    <p>{{ post.description }}
+    {% capture readtime %} {{ post.content | number_of_words | plus:91 | divided_by:180 }} {% endcapture %}
+    {% if readtime != '0' %}
+      <span class="readtime">(ongeveer{{ readtime }} min. lezen)</span>
+    {% endif %}
+    </p>
   </li>
 {% endfor %}
 </ul>
 
+<p>Meer (oudere) artikelen zijn te vinden in het <a href="/blog.html">overzicht</a>.</p>
 </div>
