@@ -7,10 +7,10 @@
 /* MAIN */
   Develop & Main Design: Mark Prins
   Twitter: @mc_prins
-  Site: http://geodienstencentrum.nl/
+  Site: http://www.geodienstencentrum.nl/
 
 /* SITE */
   Twitter: @GeoDiensten
-  Last update: 01/01/2014
+  Last update: 01/01/2015
   Doctype: HTML5
-  IDE: Chrome, notapad++ Built using Jekyll.
+  IDE: Chrome, notepad++ Built using Jekyll.
