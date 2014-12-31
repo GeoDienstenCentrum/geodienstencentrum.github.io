@@ -7,7 +7,7 @@
 /* MAIN */
   Develop & Main Design: Mark Prins
   Twitter: @mc_prins
-  Site: http://wwwgeodienstencentrum.nl/
+  Site: http://www.geodienstencentrum.nl/
 
 /* SITE */
   Twitter: @GeoDiensten
