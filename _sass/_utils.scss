@@ -1,5 +1,7 @@
+// scss-lint:disable ImportantRule
+
 // 'onzichtbare' tekst/inhoud/context
-.visually-hidden { 
+.visually-hidden {
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;
@@ -9,6 +11,8 @@
   clip: rect(1px, 1px, 1px, 1px);
   border: 0 !important;
 }
+
+// scss-lint:enable ImportantRule
 
 .hidden {
   display: none;

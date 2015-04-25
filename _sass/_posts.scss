@@ -2,7 +2,7 @@
 .posts {
   margin-bottom: 2em;
   list-style-type: none;
-  
+
   li {
     // line-height: 1.75em;
   }
@@ -16,8 +16,8 @@
 .post pre {
   // standard
   padding: 0 .4em;
-  background-color: #eef;
-  border: 1px solid #ddd;
+  background-color: $post-code-background-col;
+  border: 1px solid $post-border-col;
 
   code {
     border: 0;
@@ -25,9 +25,9 @@
 
   .terminal {
     // terminal
-    color: #fff;
-    background-color: #333;
-    border: 1px solid #000;
+    color: $sitenav-text-col;
+    background-color: $post-terminal-background-color;
+    border: 1px solid invert($sitenav-text-col);
   }
 }
 
@@ -38,8 +38,8 @@
 
 .post code {
   padding: 0 .2em;
-  background-color: #eef;
-  border: 1px solid #ddd;
+  background-color: $post-code-background-col;
+  border: 1px solid $post-border-col;
 }
 
 .meta,
@@ -51,4 +51,3 @@
   font-size: smaller;
   font-style: italic;
 }
-

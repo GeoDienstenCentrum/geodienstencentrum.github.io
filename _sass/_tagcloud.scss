@@ -14,12 +14,13 @@
 
 .taglist {
   @include inline-block-list;
-  
+
   float: right;
 }
 
 .tag {
   float: left;
   margin-right: 0.5em;
+  // scss-lint:disable ImportantRule
   margin-left: 0.5em !important;
 }
