@@ -5,27 +5,26 @@ sudo: false
 rvm:
   - 2.1
 
-cache: 
+cache:
   - bundler
 
 gemfile: travisGemfile
 
-install: 
+install:
   - bundle install
   - bundle exec scss-lint -v
-  # - npm install htmlhint jshint csslint
 
 before_script:
-  # - 
+  # -
 
-script: 
-  # - bundle exec sass --check $SASS_FOLDER/*.scss
+script:
   - bundle exec jekyll build
   - bundle exec scss-lint $SASS_FOLDER
-  - bundle exec htmlproof $HTML_FOLDER --favicon --verbose
+  - bundle exec htmlproof $HTML_FOLDER --check-favicon --verbose --check-html
+  #- bundle exec htmlproof $HTML_FOLDER --check-favicon --verbose --check-html --only_4xx
+
 
 after_script:
-  # - htmlhint $HTML_FOLDER
   # - jshint $JS_FOLDER
   # - csslint $CSS_FILES --exclude-list=$CSS_EXCLUDES
 
