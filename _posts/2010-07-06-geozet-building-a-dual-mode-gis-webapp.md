@@ -53,7 +53,7 @@ is based on [Geoserver](http://geoserver.org/) and
 [Postgis](http://postgis.refractions.net/) already our choice was easy, [GeoTools](http://geotools.org/).
 It's been quite a while since I've used GeoTools and a "first" look was quite overwhelming.
 I've opted to use the upcoming [2.7
-release](http://docs.codehaus.org/display/GEOTOOLS/Upgrade+to+2.7)
+release](http://docs.geotools.org/latest/userguide/welcome/upgrade.html#geotools-2-7)
 (which already has some milestones released) mainly because of the new, simplified
 Query and SimpleFeature objects that I need. This way implementing the WFS client, as a servlet,
 becomes a fairly straightforward exercise.

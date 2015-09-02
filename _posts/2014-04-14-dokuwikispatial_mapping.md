@@ -40,7 +40,7 @@ and extensive list of samples kick-starting me to write my own mapping plugin fo
 
 As the name suggests the openlayersmap pluging uses the [OpenLayers library](http://openlayers.org).
 It has a choice of both free and proprietary basemap options [OSM](http://www.openstreetmap.org/about) or
-[MapQuest](http://developer.mapquest.com/web/products/open/map) and Bing or Google if you really want that.
+[MapQuest](http://developer.mapquest.com/products/maps/) and Bing or Google if you really want that.
 
 The latest version (4.0) of the openlayersmap plugin enables users to add wiki markup to a page that contains
 a simple configuration for the map such as dimensions, initial location and initial scale. It also allows
