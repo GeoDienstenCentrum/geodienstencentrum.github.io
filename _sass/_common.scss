@@ -11,7 +11,7 @@ body {
   text-align: center;
 }
 
-h1 { 
+h1 {
   margin-bottom: 1em;
 }
 
@@ -24,7 +24,7 @@ a {
                        $footer-anchor-text-col,
                        $footer-anchor-text-col-active,
                        $footer-anchor-text-col);
-  transition: color 0.25s linear;  
+  transition: color 0.25s linear;
 
   &:hover,
   &:focus {
@@ -40,7 +40,7 @@ a[data-proofer-ignore="true"] {
 
 abbr {
   border-bottom: 1px dotted;
-  
+
   &:hover,
   &:focus {
     cursor: help;

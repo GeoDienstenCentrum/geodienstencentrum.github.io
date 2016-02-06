@@ -9,8 +9,8 @@
   line-height: 1.4em;
   color: $site-bg-col;
   background-color: $sitenav-bg-col;
-  
-  @include breakpoint(narrow) { 
+
+  @include breakpoint(narrow) {
     top: 0.2em;
   }
 
@@ -23,7 +23,7 @@
   }
 
   a {
-    @include link-colors($sitenav-text-col, 
+    @include link-colors($sitenav-text-col,
                          $sitenav-text-col,
                          $sitenav-text-col,
                          $sitenav-text-col);
