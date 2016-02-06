@@ -8,13 +8,14 @@ lsi: false
 
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 # markdown:       kramdown
-markdown:       redcarpet
-highlighter:    pygments
+# markdown:       redcarpet
+# highlighter:    pygments
 source:         .
 destination:    ./_site
-plugins:        ./_plugins
-layouts:        ./_layouts
+plugins_dir:    ./_plugins
+layouts_dir:    ./_layouts
 future:         true
 show_drafts:    nil
 exclude:
@@ -42,7 +43,7 @@ subtitle:       Over toegankelijke ruimtelijke informatievoorziening
 author:         GeoDienstenCentrum
 site-twitter:   GeoDiensten
 author-twitter: mc_prins
-email:          mark@geodienstencentrum.nl
-phone:          
+email:          mprins@users.sf.net
+phone:
 github-user:    GeoDienstenCentrum
 url:            http://www.geodienstencentrum.nl

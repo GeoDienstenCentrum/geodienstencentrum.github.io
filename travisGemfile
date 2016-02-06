@@ -1,6 +1,9 @@
+# use  BUNDLE_GEMFILE=travisGemfile bundle update
+# or BUNDLE_GEMFILE=travisGemfile bundle
+
 source 'https://rubygems.org'
 
 gem 'compass'
-gem 'scss-lint'
+gem 'scss_lint'
 gem 'html-proofer'
 gem 'github-pages'
