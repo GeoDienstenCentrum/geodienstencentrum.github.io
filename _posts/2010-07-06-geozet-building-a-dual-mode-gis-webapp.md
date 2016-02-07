@@ -11,22 +11,12 @@ description: Within the GEOZET viewer project an accessible GIS web viewer is be
 image: 2010-07-06-geozet-core-screen.png
 ---
 
-Within the GEOZET viewer project a dual mode GIS web application is being developed by
-[Geonovum](http://www.geonovum.nl/) as one of the launching products of the
-[PDOK programme](http://www.geonovum.nl/dossiers/pdok).
-Dual mode in this case being on the one hand a rich, map enabled client/GUI and on the other hand a
-lean non-javascript, non-css client/GUI for cases like screenreaders.
-[Bart](http://www.osgis.nl/index.htm) has [written](http://osgisjs.blogspot.com/) about the
-OpenLayers based "rich" client in his posts, I'm working on the "core" version, that this post is
-about.
+Within the GEOZET viewer project a dual mode GIS web application is being developed by [Geonovum](http://www.geonovum.nl/) as one of the launching products of the [PDOK programme](http://www.geonovum.nl/dossiers/pdok). Dual mode in this case being on the one hand a rich, map enabled client/GUI and on the other hand a lean non-javascript, non-css client/GUI for cases like screenreaders.
+[Bart](http://www.osgis.nl/index.htm) has [written](http://osgisjs.blogspot.com/) about the OpenLayers based "rich" client in his posts, I'm working on the "core" version, that this post is about.
 
 ## Application
 
-GEOZET viewer is a web application that provides access to government publications (government in
-this case the local, provincial and state governments and associations) through a geographic means.
-Publications are documents such as building, cutting, liquor and other permits and licenses,
-press releases, legislation and so forth. It has been commissioned by ICTU and will serve as
-the "launching application" of the PDOK motor project.
+GEOZET viewer is a web application that provides access to government publications (government in this case the local, provincial and state governments and associations) through a geographic means. Publications are documents such as building, cutting, liquor and other permits and licenses, press releases, legislation and so forth. It has been commissioned by ICTU and will serve as the "launching application" of the PDOK motor project.
 
 ## Architecture Overview
 
@@ -38,30 +28,13 @@ In a quick overview we have three open standards based webservices;
   - and a WFS service that has geocoded metadata about the publications; this includes
         address data and a hyperlink to the publication.
 
-The WFS service is specific for this application, the former two are part of the
-<a href="http://www.geonovum.nl/nieuws/pdok/update-van-stand-van-zaken-binnen-pdok" data-proofer-ignore="true">PDOK infrastucture</a>.
-Because of some extra's that we need (like returning area's) we'll probably be building our own
-Gazetteer using Hibernate Spatial and Lucene, more about this some other time.
+The WFS service is specific for this application, the former two are part of the <a href="http://www.geonovum.nl/nieuws/pdok/update-van-stand-van-zaken-binnen-pdok"  data-proofer-ignore="true">PDOK infrastucture</a>. Because of some extra's that we need (like returning area's) we'll probably be building our own Gazetteer using Hibernate Spatial and Lucene, more about this some other time.
 
 ## Implementation
 
-As part of this project I've been working on the WFS client that does the queries and renders
-the information based on user input. Two of the requirements to meet were easily transferable
-license(s) of the software stack between the hosting parties and platform independence.
-This boils down to using OpenSource toolkits on the Java platform. As most of the PDOK stack
-is based on [Geoserver](http://geoserver.org/) and
-[Postgis](http://postgis.refractions.net/) already our choice was easy, [GeoTools](http://geotools.org/).
-It's been quite a while since I've used GeoTools and a "first" look was quite overwhelming.
-I've opted to use the upcoming [2.7
-release](http://docs.geotools.org/latest/userguide/welcome/upgrade.html#geotools-2-7)
-(which already has some milestones released) mainly because of the new, simplified
-Query and SimpleFeature objects that I need. This way implementing the WFS client, as a servlet,
-becomes a fairly straightforward exercise.
+As part of this project I've been working on the WFS client that does the queries and renders the information based on user input. Two of the requirements to meet were easily transferable license(s) of the software stack between the hosting parties and platform independence. This boils down to using OpenSource toolkits on the Java platform. As most of the PDOK stack is based on [Geoserver](http://geoserver.org/) and [Postgis](http://postgis.refractions.net/) already our choice was easy, [GeoTools](http://geotools.org/). It's been quite a while since I've used GeoTools and a "first" look was quite overwhelming. I've opted to use the upcoming [2.7  release](http://docs.geotools.org/latest/userguide/welcome/upgrade.html#geotools-2-7) (which already has some milestones released) mainly because of the new, simplified Query and SimpleFeature objects that I need. This way implementing the WFS client, as a servlet, becomes a fairly straightforward exercise.
 
-The servlet essentially receives query input from the user though a simple HTML form,
-using either POST or GET, a radius and a location and optionally some filter categories.
-The user doesn't actually see the location coordinate pair, just the placename they've
-entered and which has been sent to the Gazetteer for lookup.
+The servlet essentially receives query input from the user though a simple HTML form, using either POST or GET, a radius and a location and optionally some filter categories. The user doesn't actually see the location coordinate pair, just the placename they've entered and which has been sent to the Gazetteer for lookup.
 
 <figure>
   <img src="/img/2010-07-06-geozet-core-screen.png" alt="User input form for GEOZET viewer">
@@ -90,24 +63,17 @@ private Filter maakFilter(double xcoord, double ycoord, double straal,
 		}
 		filterString.append(")");
 	}
-	LOGGER.debug("CQL voor filter is: " + filterString);
 
 	try {
 		filter = CQL.toFilter(filterString.toString());
 	} catch (final CQLException e) {
-		LOGGER.error("CQL Fout in de query voor de WFS.", e);
 		throw new ServletException("CQL Fout in de query voor de WFS.", e);
 	}
 	return filter;
 }
 ```
 
-Once we have the filter constructed we can fire off a query to the WFS and the result is parsed
-and rendered in a HTML list to the client. This way the information becomes accessible to
-screenreaders and other types of small capability" devices. In the parsing of the response
-I also calculate the distance between the objects in the response and the requested place
-so that the list can be sorted based on this distance, I'm using the UserData Map on the feature
-to store this information and then the sort method from the Collections framework.
+Once we have the filter constructed we can fire off a query to the WFS and the result is parsed and rendered in a HTML list to the client. This way the information becomes accessible to screenreaders and other types of small capability" devices. In the parsing of the response I also calculate the distance between the objects in the response and the requested place so that the list can be sorted based on this distance, I'm using the UserData Map on the feature to store this information and then the sort method from the Collections framework.
 
 ```java
 protected Vector<SimpleFeature> ophalenBekendmakingen(Filter filter,
@@ -120,18 +86,14 @@ protected Vector<SimpleFeature> ophalenBekendmakingen(Filter filter,
 		query.setPropertyNames(Query.ALL_NAMES);
 		query.setHandle("GEOZET-handle");
 	} catch (final NoSuchAuthorityCodeException e) {
-		LOGGER.fatal("De gevraagde CRS autoriteit is niet gevonden.", e);
 		throw new ServletException(
 				"De gevraagde CRS autoriteit is niet gevonden.", e);
 	} catch (final FactoryException e) {
-		LOGGER.fatal(
-				"Gevraagde GeoTools factory voor CRS is niet gevonden.", e);
 		throw new ServletException(
 				"Gevraagde GeoTools factory voor CRS is niet gevonden.", e);
 	}
 
 	final SimpleFeatureCollection features = this.source.getFeatures(query);
-	LOGGER.debug("Er zijn " + features.size() + " features opgehaald.");
 
 	final Point p = this.geometryFactory.createPoint(new Coordinate(xcoord,
 			ycoord));
@@ -143,7 +105,6 @@ protected Vector<SimpleFeature> ophalenBekendmakingen(Filter filter,
 	try {
 		while (iterator.hasNext()) {
 			final SimpleFeature feature = iterator.next();
-			LOGGER.debug("Opgehaalde feature: " + feature);
 			afstand = p.distance((Geometry) feature
 					.getDefaultGeometryProperty().getValue());
 			feature.getUserData().put(AFSTAND_NAAM, afstand);
@@ -153,20 +114,13 @@ protected Vector<SimpleFeature> ophalenBekendmakingen(Filter filter,
 		iterator.close();
 	}
 	Collections.sort(bekendmakingen, new AfstandComparator());
-	LOGGER.debug("Er zijn " + bekendmakingen.size()
-			+ " features gesorteerd.");
 	return bekendmakingen;
 }
 ```
 
-In a later stage we'll probably also provide a "REST like" url, I'm still not sure how to
-do this though as the URL should be something "human" readable/understandable; we might end up
-just supporting the location information and not the filter as that makes things much simpler.
+In a later stage we'll probably also provide a "REST like" url, I'm still not sure how to do this though as the URL should be something "human" readable/understandable; we might end up just supporting the location information and not the filter as that makes things much simpler.
 
-> This project will go live on [overheid.nl](http://www.overheid.nl/) and be
-open sourced on the [Open Source Observatory and Repository](http://www.osor.eu/) (OSOR)
-November 1st, 2011.
+> This project will go live on [overheid.nl](http://www.overheid.nl/) and be open sourced on the [Open Source Observatory and Repository](http://www.osor.eu/) (OSOR) November 1st, 2011.
 
-[This post was previously published](https://gispunt.wordpress.com/2010/07/06/geozet-building-a-dual-mode-gis-webapp/)
-on GISpunt.
+[This post was previously  published](https://gispunt.wordpress.com/2010/07/06/geozet-building-a-dual-mode-gis-webapp/) on GISpunt.
 
