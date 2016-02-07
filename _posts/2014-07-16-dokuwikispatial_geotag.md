@@ -58,7 +58,7 @@ The geotag is rendered as part of the page content/body in the form of a [geo mi
 ...
 ```
 
-Which looks something like the [figure](\#screen) below in the default DokuWiki layout.
+Which looks something like the [figure](#screen) below in the default DokuWiki layout.
 
 <figure id="screen">
   <img src="/img/2014-07-16-geotag.png" alt="geotag example screen capture">
