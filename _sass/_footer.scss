@@ -14,7 +14,7 @@
     float: left;
     margin-right: 1.1em;
   }
-  
+
   a {
     @include link-colors($footer-text-col,
                          $footer-anchor-text-col,
