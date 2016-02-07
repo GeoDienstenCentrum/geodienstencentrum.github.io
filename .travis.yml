@@ -4,9 +4,9 @@ sudo: false
 
 rvm:
   - 2.2
+  - jruby-head
 
-cache:
-  - bundler
+cache: bundler
 
 # use "BUNDLE_GEMFILE=travisGemfile bundle update" to update
 gemfile: travisGemfile
