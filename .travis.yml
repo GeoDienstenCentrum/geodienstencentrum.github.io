@@ -3,7 +3,7 @@ language: ruby
 sudo: false
 
 rvm:
-  - 2.1
+  - 2.2
 
 cache:
   - bundler
@@ -35,7 +35,7 @@ env:
     - HTML_FOLDER="./_site/"
     - SASS_FOLDER="./_sass/"
     - JS_FOLDER="./js/"
-    - CSS_FILES="css/main.css,css/old-ie.css,css/print.css,css/screen.css"
+    - CSS_FILES="css/main.css,css/print.css,css/screen.css"
     - CSS_EXCLUDES=""
 
 notifications:
