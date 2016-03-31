@@ -21,7 +21,7 @@ before_script:
 script:
   - bundle exec jekyll build
   - bundle exec scss-lint $SASS_FOLDER
-  - bundle exec htmlproofer $HTML_FOLDER --check-favicon --verbose --check-html
+  - bundle exec htmlproofer $HTML_FOLDER --check-favicon --check-html
   #- bundle exec htmlproof $HTML_FOLDER --check-favicon --verbose --check-html --only_4xx
 
 
