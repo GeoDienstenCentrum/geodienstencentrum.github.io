@@ -5,7 +5,7 @@ lsi: false
 # see: https://help.github.com/articles/using-jekyll-with-pages
 # config, see: http://jekyllrb.com/docs/configuration/
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
 markdown:       kramdown
