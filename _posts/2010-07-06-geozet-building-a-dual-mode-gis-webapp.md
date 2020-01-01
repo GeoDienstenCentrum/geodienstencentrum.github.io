@@ -11,8 +11,8 @@ description: Within the GEOZET viewer project an accessible GIS web viewer is be
 image: 2010-07-06-geozet-core-screen.png
 ---
 
-Within the GEOZET viewer project a dual mode GIS web application is being developed by [Geonovum](http://www.geonovum.nl/) as one of the launching products of the [PDOK programme](http://www.geonovum.nl/dossiers/pdok). Dual mode in this case being on the one hand a rich, map enabled client/GUI and on the other hand a lean non-javascript, non-css client/GUI for cases like screenreaders.
-[Bart](http://www.osgis.nl/index.htm) has [written](http://osgisjs.blogspot.com/) about the OpenLayers based "rich" client in his posts, I'm working on the "core" version, that this post is about.
+Within the GEOZET viewer project a dual mode GIS web application is being developed by [Geonovum](http://www.geonovum.nl/) as one of the launching products of the [PDOK programme](https://www.geonovum.nl/themas/pdok). Dual mode in this case being on the one hand a rich, map enabled client/GUI and on the other hand a lean non-javascript, non-css client/GUI for cases like screenreaders.
+[Bart](http://www.osgis.nl/) has [written](http://osgisjs.blogspot.com/) about the OpenLayers based "rich" client in his posts, I'm working on the "core" version, that this post is about.
 
 ## Application
 
