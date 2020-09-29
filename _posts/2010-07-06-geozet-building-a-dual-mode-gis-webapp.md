@@ -120,7 +120,7 @@ protected Vector<SimpleFeature> ophalenBekendmakingen(Filter filter,
 
 In a later stage we'll probably also provide a "REST like" url, I'm still not sure how to do this though as the URL should be something "human" readable/understandable; we might end up just supporting the location information and not the filter as that makes things much simpler.
 
-> This project will go live on [overheid.nl](http://www.overheid.nl/) and be open sourced on the [Open Source Observatory and Repository](http://www.osor.eu/) (OSOR) November 1st, 2011.
+> This project will go live on [overheid.nl](https://www.overheid.nl/) and be open sourced on the [Open Source Observatory and Repository](http://www.osor.eu/) (OSOR) November 1st, 2011.
 
 [This post was previously  published](https://gispunt.wordpress.com/2010/07/06/geozet-building-a-dual-mode-gis-webapp/) on GISpunt.
 
