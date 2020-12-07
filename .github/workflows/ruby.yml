@@ -1,0 +1,49 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# This workflow will download a prebuilt Ruby version, install dependencies and run tests with Rake
+# For more information see: https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
+
+name: Ruby
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  BUNDLE_GEMFILE: travisGemfile
+  # speeds up installation of html-proofer
+  NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+  HTML_FOLDER: "./_site/"
+  SASS_FOLDER: "./_sass/"
+  JS_FOLDER: "./js/"
+  CSS_FILES: "css/main.css,css/print.css,css/screen.css"
+  CSS_EXCLUDES: ""
+
+jobs:
+  check:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.5
+        bundler-cache: true
+    - name: Install dependencies
+      run: |
+        bundle install
+        bundle exec scss-lint -v
+    - name: Build & Check
+      run: |
+        bundle exec jekyll build
+        bundle exec scss-lint $SASS_FOLDER
+        bundle exec htmlproofer $HTML_FOLDER --check-favicon --check-html
+        # bundle exec htmlproof $HTML_FOLDER --check-favicon --verbose --check-html --only_4xx
+        # jshint $JS_FOLDER
+        # csslint $CSS_FILES --exclude-list=$CSS_EXCLUDES
