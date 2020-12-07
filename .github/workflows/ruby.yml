@@ -14,7 +14,8 @@ on:
     branches: [ master ]
 
 env:
-  BUNDLE_GEMFILE: travisGemfile
+  # use "BUNDLE_GEMFILE=ghaGemfile bundle update" to update
+  BUNDLE_GEMFILE: ghaGemfile
   # speeds up installation of html-proofer
   # NOKOGIRI_USE_SYSTEM_LIBRARIES: true
   HTML_FOLDER: "./_site/"

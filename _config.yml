@@ -24,6 +24,8 @@ exclude:
   - vendor
   - travisGemfile
   - travisGemfile.lock
+  - ghaGemfile
+  - ghaGemfile.lock
 include:        [_pages]
 TZ:             Europe/Amsterdam
 
