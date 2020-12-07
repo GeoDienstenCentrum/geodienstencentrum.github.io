@@ -16,7 +16,7 @@ on:
 env:
   BUNDLE_GEMFILE: travisGemfile
   # speeds up installation of html-proofer
-  NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+  # NOKOGIRI_USE_SYSTEM_LIBRARIES: true
   HTML_FOLDER: "./_site/"
   SASS_FOLDER: "./_sass/"
   JS_FOLDER: "./js/"
