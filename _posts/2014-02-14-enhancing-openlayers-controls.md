@@ -240,6 +240,6 @@ onClick : function(geometry) {
 
 When using WMS or WMTS layers this code can be limited to passing the coordinate pair of the click location to a feature info control as is done in the [CBS viewer project](https://github.com/mprins/CBSviewer/blob/master/src/main/js/KeyboardClick.js#L52).
 
-For some of the other javascript and Sass code you can look into the [openlayersmap](http://sourceforge.net/p/dokuwikispatial/code/HEAD/tree/trunk/openlayersmap/src/javascript/) [DokuWiki plugin](https://www.dokuwiki.org/plugin:openlayersmap) source tree.
+For some of the other javascript and Sass code you can look into the [openlayersmap](https://github.com/mprins/dokuwiki-plugin-openlayersmap/tree/master/javascript) [DokuWiki plugin](https://www.dokuwiki.org/plugin:openlayersmap) source tree.
 
 [Talk about this on twitter](https://twitter.com/GeoDiensten/status/434063976347860992).
