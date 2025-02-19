@@ -35,6 +35,6 @@ The plugin integrates with the geotag plugin to link to a page with dynamic sear
         findnearby to 50.62ºN;6.04ºE</a>.</figcaption>
 </figure>
 
-Some more examples are available on the [sample site](http://dokuwikispatial.sourceforge.net/dokuwiki/spatialhelper:start) and [wild-water.nl](http://wild-water.nl/dokuwiki/start?do=findnearby&geohash=u0urcr)
+Some more examples are available on the [sample site](https://dokuwikispatial.sourceforge.io/dokuwiki/doku.php/spatialhelper/start) and [wild-water.nl](https://wild-water.nl/dokuwiki/start?do=findnearby&geohash=u0urcr)
 
 [Talk about this on twitter](https://twitter.com/GeoDiensten/status/512158204290408448).
