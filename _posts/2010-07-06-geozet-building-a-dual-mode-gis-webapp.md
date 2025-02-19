@@ -11,7 +11,7 @@ description: Within the GEOZET viewer project an accessible GIS web viewer is be
 image: 2010-07-06-geozet-core-screen.png
 ---
 
-Within the GEOZET viewer project a dual mode GIS web application is being developed by [Geonovum](http://www.geonovum.nl/) as one of the launching products of the [PDOK programme](https://www.geonovum.nl/themas/pdok). Dual mode in this case being on the one hand a rich, map enabled client/GUI and on the other hand a lean non-javascript, non-css client/GUI for cases like screenreaders.
+Within the GEOZET viewer project a dual mode GIS web application is being developed by [Geonovum](https://www.geonovum.nl/) as one of the launching products of the [PDOK programme](https://www.geonovum.nl/themas/pdok). Dual mode in this case being on the one hand a rich, map enabled client/GUI and on the other hand a lean non-javascript, non-css client/GUI for cases like screenreaders.
 [Bart](http://www.osgis.nl/) has [written](http://osgisjs.blogspot.com/) about the OpenLayers based "rich" client in his posts, I'm working on the "core" version, that this post is about.
 
 ## Application
@@ -28,11 +28,11 @@ In a quick overview we have three open standards based webservices;
   - and a WFS service that has geocoded metadata about the publications; this includes
         address data and a hyperlink to the publication.
 
-The WFS service is specific for this application, the former two are part of the <a href="http://www.geonovum.nl/nieuws/pdok/update-van-stand-van-zaken-binnen-pdok"  data-proofer-ignore="true">PDOK infrastucture</a>. Because of some extra's that we need (like returning area's) we'll probably be building our own Gazetteer using Hibernate Spatial and Lucene, more about this some other time.
+The WFS service is specific for this application, the former two are part of the <a href="https://www.geonovum.nl/nieuws/pdok/update-van-stand-van-zaken-binnen-pdok"  data-proofer-ignore="true">PDOK infrastucture</a>. Because of some extra's that we need (like returning area's) we'll probably be building our own Gazetteer using Hibernate Spatial and Lucene, more about this some other time.
 
 ## Implementation
 
-As part of this project I've been working on the WFS client that does the queries and renders the information based on user input. Two of the requirements to meet were easily transferable license(s) of the software stack between the hosting parties and platform independence. This boils down to using OpenSource toolkits on the Java platform. As most of the PDOK stack is based on [Geoserver](http://geoserver.org/) and [Postgis](http://postgis.refractions.net/) already our choice was easy, [GeoTools](http://geotools.org/). It's been quite a while since I've used GeoTools and a "first" look was quite overwhelming. I've opted to use the upcoming [2.7  release](http://docs.geotools.org/latest/userguide/welcome/upgrade.html#geotools-2-7) (which already has some milestones released) mainly because of the new, simplified Query and SimpleFeature objects that I need. This way implementing the WFS client, as a servlet, becomes a fairly straightforward exercise.
+As part of this project I've been working on the WFS client that does the queries and renders the information based on user input. Two of the requirements to meet were easily transferable license(s) of the software stack between the hosting parties and platform independence. This boils down to using OpenSource toolkits on the Java platform. As most of the PDOK stack is based on [Geoserver](https://geoserver.org/) and [Postgis](https://postgis.refractions.net/) already our choice was easy, [GeoTools](https://geotools.org/). It's been quite a while since I've used GeoTools and a "first" look was quite overwhelming. I've opted to use the upcoming [2.7  release](https://docs.geotools.org/latest/userguide/welcome/upgrade.html#geotools-2-7) (which already has some milestones released) mainly because of the new, simplified Query and SimpleFeature objects that I need. This way implementing the WFS client, as a servlet, becomes a fairly straightforward exercise.
 
 The servlet essentially receives query input from the user though a simple HTML form, using either POST or GET, a radius and a location and optionally some filter categories. The user doesn't actually see the location coordinate pair, just the placename they've entered and which has been sent to the Gazetteer for lookup.
 
